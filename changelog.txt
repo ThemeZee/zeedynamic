@@ -1,6 +1,11 @@
 ===================================
-zeeDynamicPro Changelog
+zeeDynamic Changelog
 ===================================
+
+Version 1.0.1
+-----------------------------------
+[fixed] undefined variables in template-tags.php
+
 
 Version 1.0
 -----------------------------------
