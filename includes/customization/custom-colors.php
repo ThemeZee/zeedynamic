@@ -13,7 +13,7 @@ add_action('wp_head', 'themezee_custom_colors');
 function themezee_custom_colors() { 
 	
 	// Get Theme Options
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	
 	// Get Color Scheme and set color scheme to default if nothing is selected)
 	$color_scheme = $options['themeZee_color_scheme'] <> '' ? esc_attr($options['themeZee_color_scheme']) : 'default';
