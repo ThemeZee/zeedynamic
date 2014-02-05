@@ -46,49 +46,46 @@ function themezee_options_array() {
 function themezee_options_sidebar() {
 	$theme_data = wp_get_theme(); 
 ?>
-	<div class="zee_options_sidebar">
+
+	<dl><dt><h4><?php _e('Theme Data', 'zeeDynamic_language'); ?></h4></dt>
+		<dd>
+			<p><?php _e('Name', 'zeeDynamic_language'); ?>: <?php echo $theme_data->Name; ?><br/>
+			<?php _e('Version', 'zeeDynamic_language'); ?>: <b><?php echo $theme_data->Version; ?></b>
+			<a href="<?php echo get_template_directory_uri(); ?>/changelog.txt" target="_blank"><?php _e('(Changelog)', 'zeeDynamic_language'); ?></a><br/>
+			<?php _e('Author', 'zeeDynamic_language'); ?>: <a href="http://themezee.com/" target="_blank">ThemeZee</a><br/>
+			</p>
+		</dd>
+	</dl>
 	
-		<dl><dt><h4><?php _e('Theme Data', 'zeeDynamic_language'); ?></h4></dt>
-			<dd>
-				<p><?php _e('Name', 'zeeDynamic_language'); ?>: <?php echo $theme_data->Name; ?><br/>
-				<?php _e('Version', 'zeeDynamic_language'); ?>: <b><?php echo $theme_data->Version; ?></b>
-				<a href="<?php echo get_template_directory_uri(); ?>/changelog.txt" target="_blank"><?php _e('(Changelog)', 'zeeDynamic_language'); ?></a><br/>
-				<?php _e('Author', 'zeeDynamic_language'); ?>: <a href="http://themezee.com/" target="_blank">ThemeZee</a><br/>
-				</p>
-			</dd>
-		</dl>
-		
-		<dl><dt><h4><?php _e('Upgrade', 'zeeDynamic_language'); ?> <?php echo $theme_data->Name; ?></h4></dt>
-			<dd>
-				<ul>
-					<li><a href="http://themezee.com/themes/zeedynamic/#PROVersion-1" target="_blank"><?php _e('Check out the PRO Version', 'zeeDynamic_language'); ?></a></li>
-					<li><a href="http://themezee.com/join-the-theme-club/" target="_blank"><?php _e('Join the Theme Club and get Support', 'zeeDynamic_language'); ?></a></li>
-				</ul>
-			</dd>
-		</dl>
-		
-		<dl><dt><h4><?php _e('Help to translate', 'zeeDynamic_language'); ?> </h4></dt>
-			<dd>
-				<p><?php _e('You want to use this WordPress theme in your native language? Then help out to translate it!', 'zeeDynamic_language'); ?></p>
-				<ul>
-					<li><a href="http://translate.themezee.org/projects/zeedynamic" target="_blank"><?php _e('Join the Online Translation Project', 'zeeDynamic_language'); ?></a></li>
-				</ul>
-			</dd>
-		</dl>
-				
-		<dl><dt><h4><?php _e('Subscribe Now', 'zeeDynamic_language'); ?></h4></dt>
-			<dd>
-				<p><?php _e('Subscribe now and get informed about each <b>Theme Release</b> from ThemeZee.', 'zeeDynamic_language'); ?></p>
-				<ul class="subscribe">
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/rss.png"/><a href="http://themezee.com/feed/" target="_blank"><?php _e('RSS Feed', 'zeeDynamic_language'); ?></a></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/email.png"/><a href="http://feedburner.google.com/fb/a/mailverify?uri=Themezee" target="_blank"><?php _e('Email Subscription', 'zeeDynamic_language'); ?></a></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/twitter.png"/><a href="http://twitter.com/ThemeZee" target="_blank"><?php _e('Follow me on Twitter', 'zeeDynamic_language'); ?></a></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/facebook.png"/><a href="http://www.facebook.com/ThemeZee" target="_blank"><?php _e('Become a Facebook Fan', 'zeeDynamic_language'); ?></a></li>
-				</ul>
-			</dd>
-		</dl>
-	</div>
-	<div class="clear"></div>
+	<dl><dt><h4><?php _e('Quick Links', 'zeeDynamic_language'); ?></h4></dt>
+		<dd>
+			<ul>
+				<li><a href="http://themezee.com/themes/zeedynamic/#PROVersion-1" target="_blank"><?php _e('Learn more about the PRO Version', 'zeeDynamic_language'); ?></a></li>
+				<li><a href="http://themezee.com/docs/" target="_blank"><?php _e('Theme Documentation', 'zeeDynamic_language'); ?></a></li>
+				<li><a href="http://wordpress.org/support/view/theme-reviews/zeedynamic" target="_blank"><?php _e('Rate zeeDynamic on wordpress.org', 'zeeDynamic_language'); ?></a></li>
+			</ul>
+		</dd>
+	</dl>
+
+	<dl><dt><h4><?php _e('Subscribe Now', 'zeeDynamic_language'); ?></h4></dt>
+		<dd>
+			<p><?php _e('Subscribe now and get informed about each <b>Theme Release</b> from ThemeZee.', 'zeeDynamic_language'); ?></p>
+			<ul class="subscribe">
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/rss.png"/><a href="http://themezee.com/feed/" target="_blank"><?php _e('RSS Feed', 'zeeDynamic_language'); ?></a></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/email.png"/><a href="http://feedburner.google.com/fb/a/mailverify?uri=Themezee" target="_blank"><?php _e('Email Subscription', 'zeeDynamic_language'); ?></a></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/twitter.png"/><a href="http://twitter.com/ThemeZee" target="_blank"><?php _e('Follow me on Twitter', 'zeeDynamic_language'); ?></a></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/facebook.png"/><a href="http://www.facebook.com/ThemeZee" target="_blank"><?php _e('Become a Facebook Fan', 'zeeDynamic_language'); ?></a></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl><dt><h4><?php _e('Help to translate', 'zeeDynamic_language'); ?> </h4></dt>
+		<dd>
+			<p><?php _e('You want to use this WordPress theme in your native language? Then help out to translate it!', 'zeeDynamic_language'); ?></p>
+			<p><a href="http://translate.themezee.org/projects/zeedynamic" target="_blank"><?php _e('Join the Online Translation Project', 'zeeDynamic_language'); ?></a></p>
+		</dd>
+	</dl>
+
 <?php
 }
 
@@ -97,21 +94,21 @@ function themezee_options_sidebar() {
 function themezee_options_welcome_page() { 
 	$theme_data = wp_get_theme();
 	$pro_url = 'http://themezee.com/themes/zeedynamic/';
-	$club_url = 'http://themezee.com/join-the-theme-club/';
+	$docs_url = '<a href="http://themezee.com/docs/" target="_blank">' . __('Theme Documentation', 'zeeDynamic_language') . '</a>';
 ?>
-	<div id="zee_welcome">
+	<div id="themezee-admin-welcome">
 		<h3><?php _e('Thank you for installing this theme!', 'zeeDynamic_language'); ?></h3>
 		<div class="container">
 			<h1><?php _e('Welcome to', 'zeeDynamic_language'); ?> <?php echo $theme_data->Name; ?></h1>
-			<div class="zee_intro">
+			<div class="welcome-intro">
 				<?php _e("First of all, the theme options might alarm you, <b>but don't panic</b>. Everything is organized and documented well enough for you.", 'zeeDynamic_language'); ?>
 			</div>
 		</div>
-		<div class="welcome_halfed">
-			<div class="welcome_left">
+		<div id="themezee-admin-welcome-columns" class="themezee-admin-clearfix">
+			<div class="column-left">
 				<h3><?php _e('Want more features?', 'zeeDynamic_language'); ?></h3>
 				<div class="container">
-					<h2><?php _e('Check out', 'zeeDynamic_language'); ?> <?php echo $theme_data->Name; ?>Pro</h2>
+					<h2><?php printf( _x('Upgrade to %s', 'PRO version', 'zeeDynamic_language'), $theme_data->Name .'Pro'); ?></h2>
 					<p><?php _e('The <b>PRO Version</b> provide additional features to <b>customize</b> and configure your Theme.', 'zeeDynamic_language'); ?></p>
 					<p><h4><?php _e('Some Pro Features:', 'zeeDynamic_language'); ?></h4>
 						<ul>
@@ -122,34 +119,32 @@ function themezee_options_welcome_page() {
 							<li><?php _e('+ Header Content Area', 'zeeDynamic_language'); ?></li>
 							<li><?php _e('+ and a lot more..', 'zeeDynamic_language'); ?></li>
 						</ul>
-						<a class="welcome_button" href="<?php echo $pro_url; ?>#PROVersion-1" target="_blank"><?php _e('Learn more about the PRO Version', 'zeeDynamic_language'); ?></a>
+						<a class="themezee-admin-button" href="<?php echo $pro_url; ?>#PROVersion-1" target="_blank"><?php _e('Learn more about the PRO Version', 'zeeDynamic_language'); ?></a>
 					</p>
 				</div>
 			</div>
-			<div class="welcome_right">
-				<h3><?php _e('Need support?', 'zeeDynamic_language'); ?></h3>
+			<div class="column-right">
+				<h3><?php _e('Need help?', 'zeeDynamic_language'); ?></h3>
 				<div class="container">
-					<h2><?php _e('Join the Theme Club', 'zeeDynamic_language'); ?></h2>
-					<p><?php _e('You want <b>top-notch Support</b> for installing and configuring your Theme? Become a <b>Member</b>!', 'zeeDynamic_language'); ?></p>
-					<p><h4><?php _e('Theme Club Features:', 'zeeDynamic_language'); ?></h4>
-						<ul>
-							<li><?php _e('+ access to the Support Forum at ThemeZee.com', 'zeeDynamic_language'); ?></li>
-							<li><?php _e('+ download all Pro Themes', 'zeeDynamic_language'); ?></li>
-							<li><?php _e('+ advanced online Theme Documentation', 'zeeDynamic_language'); ?></li>
-							<li><?php _e('+ fast and helpful answers to all your questions', 'zeeDynamic_language'); ?></li>
-						</ul>
-						<a class="welcome_button" href="<?php echo $club_url; ?>" target="_blank"><?php _e('Learn more about the Theme Club', 'zeeDynamic_language'); ?></a>
-					</p>
+					<h2><?php _e('About Theme Support', 'zeeDynamic_language'); ?></h2>
+					<p><?php printf( _x('You can find <b>detailed tutorials</b> how to install and configure this theme on the %s pages.', 'theme docs link', 'zeeDynamic_language'), $docs_url); ?></p>
+					<p><?php _e('<b>Video tutorials</b> and personal help via <b>support forum</b> is only available for purchasers of the PRO version.', 'zeeDynamic_language'); ?></p>
+				</div>
+				<h3><?php _e('Like this theme?', 'zeeDynamic_language'); ?></h3>
+				<div class="container">
+					<h2><?php _e('Support theme development', 'zeeDynamic_language'); ?></h2>
+					<p><?php _e("If you like this free theme I'd highly appreciate your feedback. Thank you very much.", 'zeeDynamic_language'); ?></p>
+					<p><a href="http://wordpress.org/support/view/theme-reviews/zeedynamic" target="_blank"><?php _e('Rate zeeDynamic on wordpress.org', 'zeeDynamic_language'); ?></a></p>
 				</div>
 			</div>
-			<div class="clear"></div>
 		</div>
 		
 		<h3><?php _e('Not happy with', 'zeeDynamic_language'); ?> <?php echo $theme_data->Name; ?>?</h3>
 		<div class="container">
-		<p><?php _e('ThemeZee.com provide several other <b>free WordPress Themes</b>.', 'zeeDynamic_language'); ?>
-		<a href="http://themezee.com/themes/" target="_blank"><?php _e('Click here to browse through all of my themes.', 'zeeDynamic_language'); ?></a>
-		</p>
+			<p>
+				<?php _e('ThemeZee.com provide several other <b>free WordPress Themes</b>.', 'zeeDynamic_language'); ?>
+				<a href="http://themezee.com/themes/" target="_blank"><?php _e('Click here to browse through all of my themes.', 'zeeDynamic_language'); ?></a>
+			</p>
 		</div>
 	</div>
 <?php

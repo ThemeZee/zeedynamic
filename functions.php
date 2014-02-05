@@ -51,10 +51,10 @@ function themezee_enqueue_scripts() {
 	wp_enqueue_script('themezee_jquery_navigation');
 	
 	// Register and Enqueue Fonts
-	wp_register_style('themezee_default_font', 'http://fonts.googleapis.com/css?family=Droid+Sans');
+	wp_register_style('themezee_default_font', '//fonts.googleapis.com/css?family=Droid+Sans');
 	wp_enqueue_style('themezee_default_font');
 	
-	wp_register_style('themezee_default_title_font', 'http://fonts.googleapis.com/css?family=Francois+One');
+	wp_register_style('themezee_default_title_font', '//fonts.googleapis.com/css?family=Francois+One');
 	wp_enqueue_style('themezee_default_title_font');
 	
 }
