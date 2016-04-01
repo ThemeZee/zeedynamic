@@ -1,41 +1,72 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying search results pages.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package zeeDynamic
+ */
+ 
+get_header(); 
 
-	<div id="wrap" class="container">
+// Get Theme Options from Database
+$theme_options = zeedynamic_theme_options();
+?>
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+					
+			<header class="page-header">
+				
+				<h1 class="archive-title"><?php printf( esc_html__( 'Search Results for: %s', 'zeedynamic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				
+			</header><!-- .page-header -->
+			
+		<?php 
+		if (have_posts()) : 
 		
-		<section id="content" class="primary" role="main">
+			while (have_posts()) : the_post();
+	
+				if ( 'post' == get_post_type() ) :
 		
-		<?php if (have_posts()) : ?>
-			<h2 id="search-title" class="archive-title">
-				<?php printf( __( 'Search Results for: %s', 'zeeDynamic_language' ), '<span>' . get_search_query() . '</span>' ); ?>
-			</h2>
-		
-		<?php while (have_posts()) : the_post();
-		
-				get_template_part( 'loop', 'index' );
+					get_template_part( 'template-parts/content', $theme_options['post_layout'] );
+				
+				else :
+				
+					get_template_part( 'template-parts/content', 'search' );
+					
+				endif;
 		
 			endwhile;
-			
-			themezee_display_pagination();
+
+			// Display Pagination	
+			zeedynamic_pagination();
 
 		else : ?>
 
-			<h2 id="search-title" class="archive-title">
-				<?php printf( __( 'Search Results for: %s', 'zeeDynamic_language' ), '<span>' . get_search_query() . '</span>' ); ?>
-			</h2>
-			
-			<div class="post">
+			<div class="no-matches type-page">
 				
-				<div class="entry">
-					<p><?php _e('No matches. Please try again, or use the navigation menus to find what you search for.', 'zeeDynamic_language'); ?></p>
+				<header class="entry-header">
+		
+					<h1 class="page-title"><?php esc_html_e( 'No matches', 'zeedynamic' ); ?></h1>
+					
+				</header><!-- .entry-header -->
+				
+				<div class="entry-content">
+					
+					<p><?php esc_html_e( 'Please try again, or use the navigation menus to find what you search for.', 'zeedynamic' ); ?></p>
+					
+					<?php get_search_form(); ?>
+				
 				</div>
 				
 			</div>
 
-			<?php endif; ?>
+		<?php endif; ?>
 			
-		</section>
-		
-		<?php get_sidebar(); ?>
-	</div>
+		</main><!-- #main -->
+	</section><!-- #primary -->
 	
-<?php get_footer(); ?>	
+	<?php get_sidebar(); ?>
+	
+<?php get_footer(); ?>

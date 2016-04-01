@@ -1,23 +1,35 @@
-		
-		<?php themezee_footer_before(); // hook before #footer ?>
-		<div id="footer-wrap">
-			
-			<footer id="footer" class="container clearfix" role="contentinfo">
-				<?php 
-					$options = get_option('zeedynamic_options');
-					if ( isset($options['themeZee_general_footer']) and $options['themeZee_general_footer'] <> "" ) :
-						echo do_shortcode(wp_kses_post($options['themeZee_general_footer']));
-					endif;
-				?>
-				<div id="credit-link"><?php themezee_credit_link(); ?></div>
-			</footer>
-			
-		</div>
-		<?php themezee_footer_after(); // hook after #footer ?>
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains all content after the main content area and sidebar
+ *
+ * @package zeeDynamic
+ */
+ 
+?>
 	
-</div><!-- end #wrapper -->
-<?php themezee_wrapper_after(); // hook after #wrapper ?>
+	</div><!-- #content -->
+	
+	<?php do_action( 'zeedynamic_before_footer' ); ?>
+
+	<div id="footer" class="footer-wrap">
+	
+		<footer id="colophon" class="site-footer clearfix" role="contentinfo">
+
+			<div id="footer-text" class="site-info">
+				<?php do_action( 'zeedynamic_footer_text' ); ?>
+			</div><!-- .site-info -->
+			
+			<?php do_action( 'zeedynamic_footer_menu' ); ?>
+
+		</footer><!-- #colophon -->
+		
+	</div>
+
+</div><!-- #page -->
 
 <?php wp_footer(); ?>
+
 </body>
 </html>

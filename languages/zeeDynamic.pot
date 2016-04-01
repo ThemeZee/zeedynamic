@@ -1,713 +1,501 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zeeDynamic\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-09 17:12+0100\n"
-"PO-Revision-Date: 2013-09-09 17:12+0100\n"
-"Last-Translator: Ulrich Pogson <grapplerulrich@gmail.com>\n"
-"Language-Team: ThemeZee <contact@themezee.com>\n"
+"Report-Msgid-Bugs-To: https://themezee.com/\n"
+"POT-Creation-Date: 2016-03-31 15:57+0100\n"
+"PO-Revision-Date: 2016-03-31 15:57+0100\n"
+"Last-Translator: \n"
+"Language-Team: ThemeZee <support@themezee.com>\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;esc_attr_e;esc_attr__\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.7\n"
-
-#: 404.php:9
-msgid "404 Error: Not found"
-msgstr ""
-
-#: 404.php:12
-msgid ""
-"The page you trying to reach does not exist, or has been moved. Please use "
-"the menus or the search box to find what you are looking for"
-msgstr ""
-
-#: 404.php:14
-msgid "Search"
-msgstr ""
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:17
-msgid "Recent Posts"
+msgid "404: Page not found"
 msgstr ""
 
-#: 404.php:27
-msgid "Pages"
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try a search or one "
+"of the links below?"
 msgstr ""
 
-#: archive.php:10
-#, php-format
-msgid "Monthly Archives: %s"
-msgstr ""
-
-#: archive.php:10
-msgid "F Y"
-msgstr ""
-
-#: archive.php:12
-msgid "Archives"
-msgstr ""
-
-#: author.php:12
-#, php-format
-msgid "Author Archives: %s"
-msgstr ""
-
-#: category.php:8
-#, php-format
-msgid "Category Archives: %s"
-msgstr ""
-
-#: comments.php:13
-msgid "Enter password to view comments."
-msgstr ""
-
-#: comments.php:23 includes/template-tags.php:58
-#: includes/template-tags.php:126
+#: comments.php:30
 msgid "One comment"
 msgstr ""
 
-#: comments.php:23 includes/template-tags.php:58
-#: includes/template-tags.php:126
+#: comments.php:30
 #, php-format
 msgid "% comments"
 msgstr ""
 
-#: functions.php:99
+#: comments.php:38 comments.php:60
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41 comments.php:63
+msgid "&laquo; Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:64
+msgid "Newer Comments &raquo;"
+msgstr ""
+
+#: comments.php:76
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:80
+msgid "Leave a Reply"
+msgstr ""
+
+#: functions.php:42
 msgid "Main Navigation"
 msgstr ""
 
-#: functions.php:132
-msgid "Main Sidebar"
+#: functions.php:88 sidebar.php:20
+msgid "Sidebar"
 msgstr ""
 
-#: functions.php:134
+#: functions.php:90
+msgid "Appears on posts and pages except full width template."
+msgstr ""
+
+#: functions.php:98
+msgid "Header"
+msgstr ""
+
+#: functions.php:100
+msgid "Appears on header area. You can use a search or ad widget here."
+msgstr ""
+
+#: functions.php:108
+msgid "Magazine Homepage"
+msgstr ""
+
+#: functions.php:110
 msgid ""
-"Appears on posts and also pages (in case Sidebar Pages has no widgets) "
-"except frontpage/fullwidth template."
+"Appears on Magazine Homepage template only. You can use the Magazine Posts "
+"widgets here."
 msgstr ""
 
 #: functions.php:141
-msgid "Sidebar Pages"
+msgid "Menu"
 msgstr ""
 
-#: functions.php:143
-msgid ""
-"Appears on static pages only. Leave this widget area empty to use Main "
-"Sidebar on pages."
+#: header.php:26
+msgid "Skip to content"
 msgstr ""
 
-#: functions.php:199
-#, php-format
-msgid "Page %s"
-msgstr ""
-
-#: functions.php:213
-msgid "zeeDynamic Theme"
-msgstr ""
-
-#: functions.php:251
-msgid "Pingback:"
-msgstr ""
-
-#: functions.php:252 functions.php:268
-msgid "(Edit)"
-msgstr ""
-
-#: functions.php:278
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: image.php:22
-msgid "Previous"
-msgstr ""
-
-#: image.php:23
-msgid "Next"
-msgstr ""
-
-#: image.php:25
-msgid "Return to Gallery"
-msgstr ""
-
-#: image.php:26
-msgid "Return to"
-msgstr ""
-
-#: loop-excerpt.php:12 loop-frontpage.php:12
-msgid "Read more"
-msgstr ""
-
-#: loop.php:11
-msgid "<span>Read more</span>"
-msgstr ""
-
-#: search.php:9 search.php:23
+#: search.php:21
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: search.php:29
+#: search.php:51
+msgid "No matches"
+msgstr ""
+
+#: search.php:57
 msgid ""
-"No matches. Please try again, or use the navigation menus to find what you "
-"search for."
+"Please try again, or use the navigation menus to find what you search for."
 msgstr ""
 
-#: searchform.php:3
-msgid "Search..."
+#: searchform.php:4
+msgctxt "label"
+msgid "Search for:"
 msgstr ""
 
-#: sidebar.php:20
-msgid "Widget Area"
+#: searchform.php:5
+msgctxt "placeholder"
+msgid "Search &hellip;"
 msgstr ""
 
-#: tag.php:8
-#, php-format
-msgid "Tag Archives: %s"
+#: sidebar.php:22
+msgid ""
+"Please go to Appearance &#8594; Widgets and add some widgets to your sidebar."
 msgstr ""
 
-#: includes/template-tags.php:38
+#: template-magazine.php:43
+msgid ""
+"Please go to Appearance &#8594; Widgets and add at least one widget to the "
+"\"Magazine Homepage\" widget area. You can use the Magazine Posts widgets to "
+"set up the theme like the demo website."
+msgstr ""
+
+#: inc/back-compat.php:40
+msgid ""
+"%$1s requires at least WordPress version 4.2. You are running version %$2s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: inc/back-compat.php:49 inc/back-compat.php:61
 #, php-format
 msgid ""
-"Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time datetime="
-"\"%3$s\">%4$s</time></a>"
+"zeeDynamic requires at least WordPress version 4.2. You are running version %s. "
+"Please upgrade and try again."
 msgstr ""
 
-#: includes/template-tags.php:48
-#, php-format
-msgid "by <a href=\"%1$s\" title=\"%2$s\" rel=\"author\">%3$s</a>"
+#: inc/template-tags.php:100 inc/template-tags.php:252
+msgid "Read more"
 msgstr ""
 
-#: includes/template-tags.php:50
+#: inc/template-tags.php:197
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: includes/template-tags.php:58 includes/template-tags.php:126
-msgid "Leave a comment"
-msgstr ""
-
-#: includes/template-tags.php:62
-msgid "Edit Post"
-msgstr ""
-
-#: includes/template-tags.php:92
+#: inc/template-tags.php:355
 #, php-format
-msgid "tagged with %1$s"
+msgid "Powered by %1$s and %2$s."
 msgstr ""
 
-#: includes/template-tags.php:151
-msgid "&laquo; Older Entries"
-msgstr ""
-
-#: includes/template-tags.php:152
-msgid "Recent Entries &raquo;"
-msgstr ""
-
-#: includes/template-tags.php:296 includes/template-tags.php:370
-#: includes/template-tags.php:405
+#: inc/theme-info.php:20 inc/theme-info.php:43
 #, php-format
-msgid "Latest in %s"
+msgid "Welcome to %1$s %2$s"
 msgstr ""
 
-#: includes/template-tags.php:472
-msgid "Read more &raquo;"
+#: inc/theme-info.php:21
+msgid "Theme Info"
 msgstr ""
 
-#: includes/customization/custom-jscript.php:18
-msgid "Menu"
+#: inc/theme-info.php:49 inc/customizer/customizer.php:102
+msgid "Theme Links"
 msgstr ""
 
-#: includes/customization/custom-jscript.php:76
-msgid "Load More Posts"
+#: inc/theme-info.php:50 inc/customizer/customizer.php:103
+msgid "https://themezee.com/themes/zeedynamic/"
 msgstr ""
 
-#: includes/customization/custom-jscript.php:77
-msgid "Loading posts..."
+#: inc/theme-info.php:50 inc/customizer/customizer.php:104
+msgid "Theme Page"
 msgstr ""
 
-#: includes/customization/custom-jscript.php:78
-msgid "No more posts to load."
+#: inc/theme-info.php:51
+msgid "Changelog"
 msgstr ""
 
-#: includes/options/options-framework.php:17
-#: includes/options/options-framework.php:71
+#: inc/theme-info.php:52
+msgid "Theme Demo"
+msgstr ""
+
+#: inc/theme-info.php:53 inc/theme-info.php:74
+#: inc/customizer/customizer.php:105
+msgid "https://themezee.com/docs/zeedynamic-documentation/"
+msgstr ""
+
+#: inc/theme-info.php:53 inc/theme-info.php:68
+#: inc/customizer/customizer.php:106
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/theme-info.php:54 inc/customizer/customizer.php:108
+msgid "Rate this theme"
+msgstr ""
+
+#: inc/theme-info.php:61
+#, php-format
+msgid "Getting Started with %s"
+msgstr ""
+
+#: inc/theme-info.php:71
+msgid ""
+"You need help to setup and configure this theme? We got you covered with an "
+"extensive theme documentation on our website."
+msgstr ""
+
+#: inc/theme-info.php:75
+#, php-format
+msgid "View %s Documentation"
+msgstr ""
+
+#: inc/theme-info.php:81 inc/customizer/customizer.php:32
 msgid "Theme Options"
 msgstr ""
 
-#: includes/options/options-framework.php:43
-msgid "Use this Image"
-msgstr ""
-
-#: includes/options/options-framework.php:75
-msgid "Theme Options successfully updated."
-msgstr ""
-
-#: includes/options/options-framework.php:101
-msgid "Save Changes"
-msgstr ""
-
-#: includes/options/options-framework.php:133
-#: includes/options/options-framework.php:135
-msgid "Welcome"
-msgstr ""
-
-#: includes/options/options-framework.php:283
-msgid "Upload Image"
-msgstr ""
-
-#: includes/options/options-setup.php:27
-msgid "General"
-msgstr ""
-
-#: includes/options/options-setup.php:32
-msgid "Colors"
-msgstr ""
-
-#: includes/options/options-setup.php:37
-msgid "Front Page"
-msgstr ""
-
-#: includes/options/options-setup.php:51
-msgid "Theme Data"
-msgstr ""
-
-#: includes/options/options-setup.php:53
-msgid "Name"
-msgstr ""
-
-#: includes/options/options-setup.php:54
-msgid "Version"
-msgstr ""
-
-#: includes/options/options-setup.php:55
-msgid "(Changelog)"
-msgstr ""
-
-#: includes/options/options-setup.php:56
-msgid "Author"
-msgstr ""
-
-#: includes/options/options-setup.php:61
-msgid "Upgrade"
-msgstr ""
-
-#: includes/options/options-setup.php:64
-msgid "Check out the PRO Version"
-msgstr ""
-
-#: includes/options/options-setup.php:65
-msgid "Join the Theme Club and get Support"
-msgstr ""
-
-#: includes/options/options-setup.php:70
-msgid "Help to translate"
-msgstr ""
-
-#: includes/options/options-setup.php:72
+#: inc/theme-info.php:84
+#, php-format
 msgid ""
-"You want to use this WordPress theme in your native language? Then help out "
-"to translate it!"
+"%s makes use of the Customizer for all theme settings. Click on \"Customize "
+"Theme\" to open the Customizer now."
 msgstr ""
 
-#: includes/options/options-setup.php:74
-msgid "Join the Online Translation Project"
+#: inc/theme-info.php:87
+msgid "Customize Theme"
 msgstr ""
 
-#: includes/options/options-setup.php:79
-msgid "Subscribe Now"
+#: inc/theme-info.php:107
+msgid "Get more features"
 msgstr ""
 
-#: includes/options/options-setup.php:81
+#: inc/theme-info.php:114 inc/customizer/functions/custom-controls.php:94
+msgid "Pro Version"
+msgstr ""
+
+#: inc/theme-info.php:117 inc/customizer/functions/custom-controls.php:97
+#, php-format
 msgid ""
-"Subscribe now and get informed about each <b>Theme Release</b> from ThemeZee."
+"Purchase the Pro Version of %s to get additional features and advanced "
+"customization options."
 msgstr ""
 
-#: includes/options/options-setup.php:83
-msgid "RSS Feed"
+#: inc/theme-info.php:120 inc/customizer/functions/custom-controls.php:101
+msgid "https://themezee.com/addons/zeedynamic-pro/"
 msgstr ""
 
-#: includes/options/options-setup.php:84
-msgid "Email Subscription"
+#: inc/theme-info.php:121 inc/customizer/functions/custom-controls.php:102
+#, php-format
+msgid "Learn more about %s Pro"
 msgstr ""
 
-#: includes/options/options-setup.php:85
-msgid "Follow me on Twitter"
+#: inc/theme-info.php:131 inc/customizer/functions/custom-controls.php:110
+msgid "ThemeZee Plugins"
 msgstr ""
 
-#: includes/options/options-setup.php:86
-msgid "Become a Facebook Fan"
-msgstr ""
-
-#: includes/options/options-setup.php:103
-msgid "Thank you for installing this theme!"
-msgstr ""
-
-#: includes/options/options-setup.php:105
-msgid "Welcome to"
-msgstr ""
-
-#: includes/options/options-setup.php:107
+#: inc/theme-info.php:134 inc/customizer/functions/custom-controls.php:113
 msgid ""
-"First of all, the theme options might alarm you, <b>but don't panic</b>. "
-"Everything is organized and documented well enough for you."
+"Extend the functionality of your WordPress website with our customized "
+"plugins."
 msgstr ""
 
-#: includes/options/options-setup.php:112
-msgid "Want more features?"
+#: inc/theme-info.php:137 inc/customizer/functions/custom-controls.php:117
+msgid "https://themezee.com/plugins/"
 msgstr ""
 
-#: includes/options/options-setup.php:114
-msgid "Check out"
+#: inc/theme-info.php:138 inc/customizer/functions/custom-controls.php:118
+msgid "Browse Plugins"
 msgstr ""
 
-#: includes/options/options-setup.php:115
-msgid ""
-"The <b>PRO Version</b> provide additional features to <b>customize</b> and "
-"configure your Theme."
+#: inc/theme-info.php:141 inc/customizer/functions/custom-controls.php:121
+msgid "Install now"
 msgstr ""
 
-#: includes/options/options-setup.php:116
-msgid "Some Pro Features:"
+#: inc/theme-info.php:156
+#, php-format
+msgid "%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)"
 msgstr ""
 
-#: includes/options/options-setup.php:118
-msgid "+ Custom Color Management"
+#: inc/theme-info.php:158
+msgid "https://themezee.com/"
 msgstr ""
 
-#: includes/options/options-setup.php:119
-msgid "+ several Pro Widgets"
+#: inc/theme-info.php:159
+msgid "rate it"
 msgstr ""
 
-#: includes/options/options-setup.php:120
-msgid "+ Custom Font Manager"
+#: inc/customizer/customizer.php:42
+msgid "Background"
 msgstr ""
 
-#: includes/options/options-setup.php:121
-msgid "+ Widgetized Footer Area"
+#: inc/customizer/customizer.php:53
+msgid "Header Image Link"
 msgstr ""
 
-#: includes/options/options-setup.php:122
-msgid "+ Header Content Area"
+#: inc/customizer/customizer.php:70
+msgid "Hide header image on front page"
 msgstr ""
 
-#: includes/options/options-setup.php:123
-msgid "+ and a lot more.."
+#: inc/customizer/default-options.php:46
+#: inc/customizer/sections/customizer-general.php:49
+msgid "Latest Posts"
 msgstr ""
 
-#: includes/options/options-setup.php:125
-msgid "Learn more about the PRO Version"
+#: inc/customizer/functions/custom-controls.php:61
+#: inc/widgets/widget-magazine-posts-columns.php:355
+#: inc/widgets/widget-magazine-posts-columns.php:376
+#: inc/widgets/widget-magazine-posts-grid.php:411
+msgid "All Categories"
 msgstr ""
 
-#: includes/options/options-setup.php:130
-msgid "Need support?"
+#: inc/customizer/sections/customizer-general.php:20
+msgid "General Settings"
 msgstr ""
 
-#: includes/options/options-setup.php:132
-msgid "Join the Theme Club"
-msgstr ""
-
-#: includes/options/options-setup.php:133
-msgid ""
-"You want <b>top-notch Support</b> for installing and configuring your Theme? "
-"Become a <b>Member</b>!"
-msgstr ""
-
-#: includes/options/options-setup.php:134
-msgid "Theme Club Features:"
-msgstr ""
-
-#: includes/options/options-setup.php:136
-msgid "+ access to the Support Forum at ThemeZee.com"
-msgstr ""
-
-#: includes/options/options-setup.php:137
-msgid "+ download all Pro Themes"
-msgstr ""
-
-#: includes/options/options-setup.php:138
-msgid "+ advanced online Theme Documentation"
-msgstr ""
-
-#: includes/options/options-setup.php:139
-msgid "+ fast and helpful answers to all your questions"
-msgstr ""
-
-#: includes/options/options-setup.php:141
-msgid "Learn more about the Theme Club"
-msgstr ""
-
-#: includes/options/options-setup.php:148
-msgid "Not happy with"
-msgstr ""
-
-#: includes/options/options-setup.php:150
-msgid "ThemeZee.com provide several other <b>free WordPress Themes</b>."
-msgstr ""
-
-#: includes/options/options-setup.php:151
-msgid "Click here to browse through all of my themes."
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:7
-msgid "Predefined Color Schemes"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:15
-msgid "Blue"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:16
-msgid "Brown"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:17
-msgid "Gray"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:18
-msgid "Green"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:19
-msgid "Orange"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:20
-msgid "Purple"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:21
-msgid "Teal"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:22
-msgid "Standard"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:29
-msgid "Set Color Scheme"
-msgstr ""
-
-#: includes/options/settings/settings-colors.php:30
-msgid "Please select your color scheme here."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:7
-msgid "Activate Frontpage Template"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:10
-msgid "Frontpage Slider"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:13
-msgid "#1 Posts from Category (horizontal)"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:16
-msgid "#2 Posts from Category  (boxed)"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:19
-msgid "#3 Posts from two Categories (2 columns)"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:22
-msgid "#4 Posts from Category (boxed)"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:25
-msgid "Normal Blog Posts"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:47
-msgid "Turn on Frontpage Template?"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:48
-msgid ""
-"Check this to automatically display the frontpage template on HOME page. You "
-"can also manually create a page and select the \"Frontpage Template\" page "
-"template instead of using this option."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:56
-msgid "Show Frontpage Slider?"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:57
-msgid ""
-"Check this to activate the Slideshow displayed on the front page template."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:63
-msgid "Slider Animation"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:69
-msgid "Horizontal Slider"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:70
-msgid "Fade Slider"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:74
-msgid "Slider Speed"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:75
-msgid ""
-"Enter the speed of the slideshow cycling (timeout between slides), in "
-"milliseconds."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:81
-msgid "Slider Content"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:87
-msgid "Show recent posts"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:88
-msgid "Show popular posts"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:91
-msgid "Slider Category"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:92
-msgid ""
-"Select a category which posts are displayed at the featured posts slider ."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:99
-msgid "Number of Posts"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:100
-msgid "Enter the number how much posts should be displayed in the post slider."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:108
-msgid "Category Posts Title"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:109
-msgid "Enter here the title which is displayed above the category posts."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:115
-#: includes/options/settings/settings-frontpage.php:125
-#: includes/options/settings/settings-frontpage.php:143
-#: includes/options/settings/settings-frontpage.php:153
-msgid "Category"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:116
-#: includes/options/settings/settings-frontpage.php:126
-#: includes/options/settings/settings-frontpage.php:144
-#: includes/options/settings/settings-frontpage.php:154
-msgid "Select the category of which posts should be displayed."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:135
-msgid "First Category "
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:136
-msgid "Select the first category of which posts should be displayed."
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:163
-msgid "Display Latest Blog Posts?"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:164
-msgid ""
-"Check this to show the latest blog posts in the normal blog layout on the "
-"frontpage template"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:170
-msgid "Latest Blog Posts Category"
-msgstr ""
-
-#: includes/options/settings/settings-frontpage.php:171
-msgid "Select the category of which the latest blog posts should be displayed."
-msgstr ""
-
-#: includes/options/settings/settings-general.php:7
-msgid "Header Settings"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:10
-msgid "Layout Settings"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:13
-msgid "Custom CSS Code"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:24
-msgid "Logo Image"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:25
-msgid ""
-"Paste the full Image URL of your logo or click Upload Image. Leave this "
-"field blank to display the site title instead of a logo image."
-msgstr ""
-
-#: includes/options/settings/settings-general.php:31
-msgid "Show Tagline?"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:32
-msgid ""
-"Check this if you want to show your tagline(blog description) below the logo"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:40
+#: inc/customizer/sections/customizer-general.php:35
 msgid "Theme Layout"
 msgstr ""
 
-#: includes/options/settings/settings-general.php:46
-msgid "Boxed (default)"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:47
-msgid "Wide"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:51
-msgid "Sidebar Options"
-msgstr ""
-
-#: includes/options/settings/settings-general.php:57
+#: inc/customizer/sections/customizer-general.php:41
 msgid "Left Sidebar"
 msgstr ""
 
-#: includes/options/settings/settings-general.php:58
+#: inc/customizer/sections/customizer-general.php:42
 msgid "Right Sidebar"
 msgstr ""
 
-#: includes/options/settings/settings-general.php:62
-msgid "Footer Content"
+#: inc/customizer/sections/customizer-general.php:56
+msgid "Blog Title"
 msgstr ""
 
-#: includes/options/settings/settings-general.php:63
-msgid "Enter the content which is displayed in the footer here."
+#: inc/customizer/sections/customizer-post.php:20
+msgid "Post Settings"
 msgstr ""
 
-#: includes/options/settings/settings-general.php:71
-msgid "Custom CSS"
+#: inc/customizer/sections/customizer-post.php:35
+msgid "Post Layout (archive pages)"
 msgstr ""
 
-#: includes/options/settings/settings-general.php:72
-msgid "Place your Custom CSS code here."
+#: inc/customizer/sections/customizer-post.php:41
+msgid "Show featured image beside content"
+msgstr ""
+
+#: inc/customizer/sections/customizer-post.php:42
+msgid "Show featured image below title"
+msgstr ""
+
+#: inc/customizer/sections/customizer-post.php:56
+msgid "Post Length (archive pages)"
+msgstr ""
+
+#: inc/customizer/sections/customizer-post.php:62
+msgid "Show full posts"
+msgstr ""
+
+#: inc/customizer/sections/customizer-post.php:63
+msgid "Show post excerpts"
+msgstr ""
+
+#: inc/customizer/sections/customizer-post.php:77
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:20
+msgid "Post Slider"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:36
+msgid "Activate Post Slider"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:51
+msgid "Show Slider on Magazine Homepage"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:66
+msgid "Show Slider on posts page"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:84
+msgid "Slider Category"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:102
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:120
+msgid "Slider Animation"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:127
+msgid "Slide Effect"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:128
+msgid "Fade Effect"
+msgstr ""
+
+#: inc/customizer/sections/customizer-slider.php:142
+msgid "Slider Speed (in ms)"
+msgstr ""
+
+#: inc/customizer/sections/customizer-upgrade.php:20
+msgid "More Features"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:21
+#, php-format
+msgid "Magazine Posts: 2 Columns (%s)"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:24
+msgid ""
+"Displays your posts from two selected categories. Please use this widget "
+"ONLY in the Magazine Homepage widget area."
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:289
+#: inc/widgets/widget-magazine-posts-grid.php:346
+#, php-format
+msgid "View all posts from category %s"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:346
+msgid "Left Category Title:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:352
+msgid "Left Category:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:367
+msgid "Right Category Title:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:373
+msgid "Right Category:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:388
+#: inc/widgets/widget-magazine-posts-grid.php:431
+msgid "Number of posts:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:396
+msgid "Highlight first post (big image + excerpt)"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:403
+#: inc/widgets/widget-magazine-posts-grid.php:446
+msgid "Display post date"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-columns.php:410
+#: inc/widgets/widget-magazine-posts-grid.php:453
+msgid "Display post author"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:21
+#, php-format
+msgid "Magazine Posts: Grid (%s)"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:24
+msgid ""
+"Displays your posts from a selected category in a grid layout. Please use "
+"this widget ONLY in the Magazine Homepage widget area."
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:402
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:408
+msgid "Category:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:423
+msgid "Grid Layout:"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:425
+msgid "Two Columns Grid"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:426
+msgid "Three Columns Grid"
+msgstr ""
+
+#: inc/widgets/widget-magazine-posts-grid.php:439
+msgid "Display post excerpt"
 msgstr ""

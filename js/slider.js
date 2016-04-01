@@ -1,15 +1,23 @@
-/*! jQuery slider.js
-  Setup of the Frontpage Slider based on the FlexSlider plugin (jquery.flexslider-min.js)
-  Author: Thomas W (themezee.com)
-*/
+/**
+ * jQuery Slider JS
+ *
+ * Adds the Flexslider Plugin for the Featured Post Slideshow
+ *
+ * @package zeeDynamic
+ */
+
 jQuery(document).ready(function($) {
 
-	/* Add flexslider to #frontpage-slider div */ 
-	$("#frontpage-slider").flexslider({
-		animation: themezeeSliderParams.animation,
-		slideshowSpeed: themezeeSliderParams.speed,
+	/* Add flexslider to #post-slider div */ 
+	$("#post-slider").flexslider({
+		animation: zeedynamic_slider_params.animation,
+		slideshowSpeed: zeedynamic_slider_params.speed,
 		namespace: "zeeflex-",
 		selector: ".zeeslides > li",
-		smoothHeight: true
+		smoothHeight: true,
+		pauseOnHover: true,
+		controlNav: false,
+		controlsContainer: ".post-slider-controls"
 	});
+	
 });

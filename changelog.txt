@@ -2,6 +2,11 @@
 zeeDynamic Changelog
 ===================================
 
+Version 1.1.0
+-----------------------------------
+[moved] all theme settings to Customizer
+[created] theme layout based on Underscores
+
 Version 1.0.4
 -----------------------------------
 [added] new theme options layout

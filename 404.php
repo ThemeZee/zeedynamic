@@ -1,41 +1,45 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (not found).
+ *
+ * @package zeeDynamic
+ */
 
-	<div id="wrap" class="container">
-		
-		<section id="content" class="primary" role="main">
+get_header(); ?>
 
-			<div class="type-page">
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			<div class="error-404 not-found type-page">
 			
-				<h2 class="page-title"><?php _e('404 Error: Not found', 'zeeDynamic_language'); ?></h2>
-				
-				<div class="entry">
-					<p><?php _e('The page you trying to reach does not exist, or has been moved. Please use the menus or the search box to find what you are looking for', 'zeeDynamic_language'); ?></p>
+				<header class="entry-header">
+		
+					<h1 class="page-title"><?php esc_html_e( '404: Page not found', 'zeedynamic' ); ?></h1>
 					
-					<h2><?php _e('Search', 'zeeDynamic_language'); ?></h2>
+				</header><!-- .entry-header -->
+				
+				<div class="entry-content clearfix">
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'zeedynamic' ); ?></p>
+					
 					<?php get_search_form(); ?>
 
-					<h2><?php _e('Recent Posts', 'zeeDynamic_language'); ?></h2>
-					<ul>
-						<?php
-							$recent_posts = wp_get_recent_posts(array('numberposts' => '8', 'post_status' => 'publish'));
-							foreach( $recent_posts as $recent ) {
-								echo '<li><a href="' . esc_url(get_permalink($recent['ID'])) . '" title="Look '.esc_attr($recent['post_title']).'" >' . $recent['post_title'] . '</a></li>';
-							}
-						?>
-					</ul>
+					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+
+					<?php the_widget( 'WP_Widget_Archives', 'dropdown=1' ); ?>
 					
-					<h2><?php _e('Pages', 'zeeDynamic_language'); ?></h2>
-					<ul>
-						<?php wp_list_pages('title_li='); ?>
-					</ul>
+					<?php the_widget( 'WP_Widget_Categories', 'dropdown=1' ); ?>
+
+					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+					
+					<?php the_widget( 'WP_Widget_Pages' ); ?>
+
 				</div>
 				
 			</div>
 
-		</section>
-		
-		<?php get_sidebar(); ?>
-		
-	</div>
+		</main><!-- #main -->
+	</section><!-- #primary -->
+	
+	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

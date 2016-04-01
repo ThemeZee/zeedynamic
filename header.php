@@ -1,62 +1,77 @@
-<!DOCTYPE html><!-- HTML 5 -->
+<?php
+/**
+ * The header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="content">
+ *
+ * @package zeeDynamic
+ */
+ 
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<?php /* Embeds HTML5shiv to support HTML5 elements in older IE versions plus CSS Backgrounds */ ?>
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-<?php themezee_wrapper_before(); // hook before #wrapper ?>
-<div id="wrapper" class="hfeed">
-	
-	<?php themezee_header_before(); // hook before #header ?>
-	<div id="header-wrap">
-	
-		<header id="header" class="container clearfix" role="banner">
-
-			<div id="logo">
-			
-				<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			<?php // Display Logo Image or Site Title
-				$options = get_option('zeedynamic_options');
-				if ( isset($options['themeZee_general_logo']) and $options['themeZee_general_logo'] <> "" ) : ?>
-					<img class="logo-image" src="<?php echo esc_url($options['themeZee_general_logo']); ?>" alt="Logo" /></a>
-			<?php else: ?>
-					<h1 class="site-title"><?php bloginfo('name'); ?></h1>
-			<?php endif; ?>
-				</a>
-				
-			<?php if(isset($options['themeZee_general_tagline']) and $options['themeZee_general_tagline'] == 'true') : ?>
-				<h2 class="site-description"><?php echo bloginfo('description'); ?></h2>
-			<?php endif; ?>
-			
-			</div>
-
-		</header>
-	
-	</div>
-	<?php themezee_header_after(); // hook after #header ?>
-	
-	<div id="navi-wrap">
-		<nav id="mainnav" class="container clearfix" role="navigation">
-			<?php 
-				// Get Navigation out of Theme Options
-				wp_nav_menu(array('theme_location' => 'main_navi', 'container' => false, 'menu_id' => 'mainnav-menu', 'echo' => true, 'fallback_cb' => 'themezee_default_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'depth' => 0));
-			?>
-		</nav>
-	</div>
-	
-	<?php // Display Custom Header Image
-		themezee_display_custom_header(); ?>
+	<div id="page" class="hfeed site">
 		
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zeedynamic' ); ?></a>
+		
+		<div id="header-top" class="header-bar-wrap"><?php do_action( 'zeedynamic_header_bar' ); ?></div>
+		
+		<header id="masthead" class="site-header clearfix" role="banner">
+			
+			<div class="header-main container clearfix">
+						
+				<div id="logo" class="site-branding clearfix">
+				
+					<?php zeedynamic_site_title(); ?>
+				
+				</div><!-- .site-branding -->
+				
+				<div class="header-widgets clearfix">
+					
+					<?php // Display Header Widgets
+					if( is_active_sidebar( 'header' ) ) : 
+			
+						dynamic_sidebar( 'header' );
+						
+					endif; ?>
+					
+				</div><!-- .header-widgets -->
+
+			
+			</div><!-- .header-main -->	
+
+			<div id="main-navigation-wrap" class="primary-navigation-wrap">
+			
+				<nav id="main-navigation" class="primary-navigation navigation clearfix" role="navigation">
+					<?php 
+						// Display Main Navigation
+						wp_nav_menu( array(
+							'theme_location' => 'primary', 
+							'container' => false, 
+							'menu_class' => 'main-navigation-menu', 
+							'echo' => true, 
+							'fallback_cb' => 'zeedynamic_default_menu')
+						);
+					?>
+				</nav><!-- #main-navigation -->
+				
+			</div>
+		
+		</header><!-- #masthead -->
+		
+		<?php zeedynamic_breadcrumbs(); ?>
+		
+		<div id="content" class="site-content container clearfix">
+		
+			<?php zeedynamic_header_image(); ?>

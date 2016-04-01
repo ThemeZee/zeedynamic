@@ -1,33 +1,26 @@
 <?php
-/*
-Template Name: Fullwidth Template
-*/
-?>
-<?php get_header(); ?>
+/**
+ * Template Name: Full-width Page
+ *
+ * Description: A custom page template for displaying a fullwidth page with no sidebar.
+ *
+ * @package zeeDynamic
+ */
 
-	<div id="wrap" class="container template-fullwidth">
-		
-		<section id="content" class="fullwidth" role="main">
-		
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
-			<div <?php post_class(); ?>>
+get_header(); ?>
+
+	<section id="primary" class="fullwidth-content-area content-area">
+		<main id="main" class="site-main" role="main">
+					
+			<?php while (have_posts()) : the_post();
+
+				get_template_part( 'template-parts/content', 'page' );
 				
-				<h2 class="page-title"><span><?php the_title(); ?></span></h2>
-				
-				<div class="entry clearfix">
-					<?php the_content(); ?>
-				</div>
-				<?php wp_link_pages(); ?>
-				
-			</div>
+				comments_template();
 
-		<?php endwhile; ?>
-
-		<?php endif; ?>
+			endwhile; ?>
 		
-		</section>
+		</main><!-- #main -->
+	</section><!-- #primary -->
 
-	</div>
-	
-<?php get_footer(); ?>	
+<?php get_footer(); ?>
