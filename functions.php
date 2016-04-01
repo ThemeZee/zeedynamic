@@ -36,7 +36,7 @@ function zeedynamic_setup() {
 	add_theme_support( 'post-thumbnails' );
 	
 	// Set detfault Post Thumbnail size
-	set_post_thumbnail_size( 840, 420, true );
+	set_post_thumbnail_size( 820, 360, true );
 
 	// Register Navigation Menu
 	register_nav_menu( 'primary', esc_html__( 'Main Navigation', 'zeedynamic' ) );
@@ -47,7 +47,7 @@ function zeedynamic_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'zeedynamic_custom_background_args', array( 'default-color' => 'cccccc' ) ) );
+	add_theme_support( 'custom-background', apply_filters( 'zeedynamic_custom_background_args', array( 'default-color' => 'e5e5e5' ) ) );
 	
 	// Set up the WordPress core custom header feature.
 	add_theme_support('custom-header', apply_filters( 'zeedynamic_custom_header_args', array(
@@ -184,8 +184,8 @@ function zeedynamic_add_image_sizes() {
 	
 	// Add different thumbnail sizes for widgets and post layouts
 	add_image_size( 'zeedynamic-thumbnail-small', 100, 80, true );
-	add_image_size( 'zeedynamic-thumbnail-medium', 350, 250, true );
-	add_image_size( 'zeedynamic-thumbnail-large', 420, 300, true );
+	add_image_size( 'zeedynamic-thumbnail-medium', 350, 230, true );
+	add_image_size( 'zeedynamic-thumbnail-large', 420, 280, true );
 	
 }
 add_action( 'after_setup_theme', 'zeedynamic_add_image_sizes' );

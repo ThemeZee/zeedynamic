@@ -98,45 +98,17 @@ F) Licenses of bundled resources
 	
 	7. Images used in screenshot.jpg are all from Pixabay - http://pixabay.com
 	
-	Image 1: https://pixabay.com/en/ladybug-zeedynamic-insect-lucky-charm-1036453/
-	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 Anja Osenberg (https://pixabay.com/en/users/cocoparisienne-127419/)
-	
-	Image 2: https://pixabay.com/en/still-life-teddy-white-read-book-1037378/
-	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 Christiane (https://pixabay.com/en/users/Oldiefan-740865/)
-	
-	Image 3: https://pixabay.com/en/popcorn-movie-party-entertainment-1085072/
-	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 Deborah Breen Whiting (https://pixabay.com/en/users/dbreen-1643989/)
-	
-	Image 4: https://pixabay.com/en/zeedynamics-harmonia-axyridis-ladybug-994211/
-	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 FRANCO PATRIZIA (https://pixabay.com/en/users/francok35-631285/)
-	
-	Image 5: https://pixabay.com/en/paris-architecture-france-674964/
+	Image 1: https://pixabay.com/en/paris-architecture-france-674964/
 	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
 	Copyright: 2015 Gerhard Boegner (https://pixabay.com/en/users/bogitw-851103/)
 	
-	Image 6: https://pixabay.com/en/vegetables-garden-harvest-organic-790022/
+	Image 2: https://pixabay.com/en/popcorn-movie-party-entertainment-1085072/
 	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 Jill Wellington (https://pixabay.com/en/users/jill111-334088/)
+	Copyright: 2015 Deborah Breen Whiting (https://pixabay.com/en/users/dbreen-1643989/)
 	
-	Image 7: https://pixabay.com/en/valentine-candy-hearts-conversation-626447/
+	Image 3: https://pixabay.com/en/white-tree-nymph-1218884/
 	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 Jill Wellington (https://pixabay.com/en/users/jill111-334088/)
-	
-	Image 8: https://pixabay.com/en/louvre-pyramid-paris-architecture-102840/
-	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 Edi Nugraha (https://pixabay.com/en/users/EdiNugraha-30562/)
-	
-	Image 9: https://pixabay.com/en/clock-time-hour-minutes-watches-782536/
-	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2015 claudio losa (https://pixabay.com/en/users/closa-726076/)
-	
-	Background Image: https://pixabay.com/en/christmas-cactus-schlumbergera-103118/
-	License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-	Copyright: 2013 nightowl (https://pixabay.com/en/users/nightowl-29/)
+	Copyright: 2009 Jondolar Schnurr (https://pixabay.com/en/users/SHAWSHANK61-1931526/)
 
 ===================================
 Enjoy!

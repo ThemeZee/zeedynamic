@@ -3,7 +3,7 @@ Theme Name: zeeDynamic
 Theme URI: https://themezee.com/themes/zeedynamic/
 Author: ThemeZee
 Author URI: https://themezee.com
-Description: zeeDynamic is a fast & elegant Lifestyle Magazine WordPress theme. It comes with a clean typography, subtle colors and works great with strong pictures. zeeDynamic makes use of the Customizer and a few widget areas which allow you to easily set up your online magazine in just a few minutes.
+Description: zeeDynamic is a fully responsive WordPress theme with strong colors and bold fonts. The theme fits perfectly for any news, magazine or blog website. The highlight of zeeDynamic is the flexible magazine homepage template and the stunning featured post slider. Of course the theme supports the newest WordPress core features.
 Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -776,7 +776,8 @@ textarea {
 	text-decoration: none;
 }
 
-.main-navigation-menu a:hover {
+.main-navigation-menu a:hover,
+.main-navigation-menu a:active {
 	background: #e84747;
 }
 
@@ -836,6 +837,7 @@ textarea {
 .main-navigation-menu li ul ul {
 	margin-left: 250px;
 	margin-left: 16rem;
+	border-top: none;
 }
 
 .main-navigation-menu li:hover ul ul, 
@@ -944,7 +946,7 @@ textarea {
 }
 
 .widget-header {
-	margin: 0 0 1em 0;
+	margin: 0 0 1.5em 0;
 	background: #333333;
 }
 
@@ -972,17 +974,13 @@ textarea {
 
 .widget-title a:link, 
 .widget-title a:visited  {
-	color: #333333;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+	color: #fff;
 }
 
 .widget-title a:hover, 
 .widget-title a:active  {
-	color: #e84747;
+	color: #fff;
+	text-decoration: underline;
 }
 
 /* Make sure select elements fit in widgets. */
@@ -1096,8 +1094,9 @@ textarea {
 }
 
 .widget-magazine-posts .medium-post .entry-title {
-	font-size: 16px;
-	font-size: 1rem;
+	font-family: 'Droid Sans', Tahoma, Arial;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .widget-magazine-posts .medium-post .entry-content {
@@ -1121,8 +1120,9 @@ textarea {
 }
 
 .widget-magazine-posts .small-post .entry-title {
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-family: 'Droid Sans', Tahoma, Arial;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .widget-magazine-posts .medium-post .entry-meta,
@@ -1808,16 +1808,6 @@ object {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
-
-	.widget-magazine-posts .medium-post .entry-title {
-		font-size: 15px;
-		font-size: 0.9375rem;
-	}
-	
-	.widget-magazine-posts .small-post .entry-title {
-		font-size: 14px;
-		font-size: 0.875rem;
-	}
 	
 }
 
@@ -2041,16 +2031,6 @@ object {
 		font-size: 20px;
 		font-size: 1.25rem;
 	}
-
-	.widget-magazine-posts .medium-post .entry-title {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-	
-	.widget-magazine-posts .small-post .entry-title {
-		font-size: 15px;
-		font-size: 0.9375rem;
-	}
 	
 }
 
@@ -2063,16 +2043,6 @@ object {
 	.widget-magazine-posts .large-post .entry-title 	{
 		font-size: 18px;
 		font-size: 1.125rem;
-	}
-
-	.widget-magazine-posts .medium-post .entry-title {
-		font-size: 15px;
-		font-size: 0.9375rem;
-	}
-	
-	.widget-magazine-posts .small-post .entry-title {
-		font-size: 14px;
-		font-size: 0.875rem;
 	}
 	
 }
@@ -2121,11 +2091,6 @@ object {
 
 	.widget-magazine-posts .large-post .entry-content {
 		display: none;
-	}
-	
-	.widget-magazine-posts .small-post .entry-title {
-		font-size: 15px;
-		font-size: 0.9375rem;
 	}
 	
 }
@@ -2239,7 +2204,9 @@ object {
 		font-size: 1.25rem;
 	}
 	
-	.entry-meta span {
+	.entry-meta .meta-date,
+	.entry-meta .meta-author,
+	.entry-meta .meta-category {
 		display: block;
 	}
 	

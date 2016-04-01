@@ -11,20 +11,20 @@ get_header();
 
 // Get Theme Options from Database
 $theme_options = zeedynamic_theme_options();
-
-// Display Slider
-if ( true == $theme_options['slider_magazine'] ) :
-
-	get_template_part( 'template-parts/post-slider' );
-	
-endif;
-
 ?>
 		
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			
-		<?php // Display Magazine Homepage Widgets
+		<?php 
+		// Display Slider
+		if ( true == $theme_options['slider_magazine'] ) :
+
+			get_template_part( 'template-parts/post-slider' );
+			
+		endif;
+		
+		// Display Magazine Homepage Widgets
 		if( is_active_sidebar( 'magazine-homepage' ) ) : ?>
 
 			<div id="magazine-homepage-widgets" class="widget-area clearfix">

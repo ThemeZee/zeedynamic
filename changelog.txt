@@ -6,6 +6,7 @@ Version 1.1.0
 -----------------------------------
 [moved] all theme settings to Customizer
 [created] theme layout based on Underscores
+[updated] screenshot with new images
 
 Version 1.0.4
 -----------------------------------

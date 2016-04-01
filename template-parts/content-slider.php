@@ -11,7 +11,7 @@
 		<?php // Display Post Thumbnail or default thumbnail
 		if( '' != get_the_post_thumbnail() ) :
 
-			the_post_thumbnail( 'zeedynamic-header-image', array( 'class' => 'slide-image' ) );
+			the_post_thumbnail( 'post-thumbnail', array( 'class' => 'slide-image' ) );
 
 		else: ?>
 
@@ -21,11 +21,17 @@
 	
 		<div class="slide-post clearfix">
 		
-			<div class="slide-content container clearfix">
-
+			<header class="entry-header">
+		
 				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+			</header><!-- .entry-header -->
 			
-			</div>
+			<div class="entry-content clearfix">
+			
+				<?php the_excerpt(); ?>
+		
+			</div><!-- .entry-content -->
 						
 		</div>
 

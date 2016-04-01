@@ -8,13 +8,13 @@
  */
 
 get_header(); 
-
-get_template_part( 'template-parts/post-slider' );
 ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-					
+				
+			<?php get_template_part( 'template-parts/post-slider' ); ?>
+			
 			<?php while (have_posts()) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' );
