@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zeeDynamic\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2016-03-31 15:57+0100\n"
-"PO-Revision-Date: 2016-03-31 15:57+0100\n"
+"POT-Creation-Date: 2016-04-03 17:11+0100\n"
+"PO-Revision-Date: 2016-04-03 17:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
 "Language: en_US\n"
@@ -142,8 +142,8 @@ msgstr ""
 #: inc/back-compat.php:49 inc/back-compat.php:61
 #, php-format
 msgid ""
-"zeeDynamic requires at least WordPress version 4.2. You are running version %s. "
-"Please upgrade and try again."
+"zeeDynamic requires at least WordPress version 4.2. You are running version "
+"%s. Please upgrade and try again."
 msgstr ""
 
 #: inc/template-tags.php:100 inc/template-tags.php:252
