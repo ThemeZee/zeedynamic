@@ -2,6 +2,10 @@
 zeeDynamic Changelog
 ===================================
 
+Version 1.1.1
+-----------------------------------
+[updated] flexlider to version 2.6.0
+
 Version 1.1.0
 -----------------------------------
 [moved] all theme settings to Customizer
