@@ -7,7 +7,23 @@
  *
  * @package zeeDynamic
  */
+
+ 
+if ( ! function_exists( 'zeedynamic_site_logo' ) ): 
+/**
+ * Displays the site logo in the header area
+ */
+function zeedynamic_site_logo() {
+
+	if ( function_exists( 'the_custom_logo' ) ) {
+		
+		the_custom_logo();
 	
+	} 
+	
+}
+endif;
+
 	
 if ( ! function_exists( 'zeedynamic_site_title' ) ):
 /**
@@ -17,6 +33,11 @@ function zeedynamic_site_title() {
 	
 	// Get Theme Options from Database
 	$theme_options = zeedynamic_theme_options();
+	
+	// Return early if site title is deactivated
+	if( false == $theme_options['site_title'] ) {
+		return;
+	}
 
 	if ( ( is_home() and $theme_options['blog_title'] == '' ) or is_page_template( 'template-magazine.php' )  ) : ?>
 		

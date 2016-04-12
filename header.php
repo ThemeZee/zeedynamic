@@ -33,6 +33,7 @@
 						
 				<div id="logo" class="site-branding clearfix">
 				
+					<?php zeedynamic_site_logo(); ?>
 					<?php zeedynamic_site_title(); ?>
 				
 				</div><!-- .site-branding -->
