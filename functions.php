@@ -130,20 +130,22 @@ add_action( 'widgets_init', 'zeedynamic_widgets_init' );
  * Enqueue scripts and styles.
  */
 function zeedynamic_scripts() {
-	global $wp_scripts;
+
+	// Get Theme Version
+	$theme_version = wp_get_theme()->get( 'Version' );
 	
 	// Register and Enqueue Stylesheet
-	wp_enqueue_style( 'zeedynamic-stylesheet', get_stylesheet_uri() );
+	wp_enqueue_style( 'zeedynamic-stylesheet', get_stylesheet_uri(), array(), $theme_version );
 	
 	// Register Genericons
-	wp_enqueue_style( 'zeedynamic-genericons', get_template_directory_uri() . '/css/genericons/genericons.css' );
+	wp_enqueue_style( 'zeedynamic-genericons', get_template_directory_uri() . '/css/genericons/genericons.css', array(), '3.4.1' );
 	
 	// Register and Enqueue HTML5shiv to support HTML5 elements in older IE versions
-	wp_enqueue_script( 'zeedynamic-html5shiv', get_template_directory_uri() . '/js/html5shiv.min.js', array(), '3.7.2', false );
-	$wp_scripts->add_data( 'zeedynamic-html5shiv', 'conditional', 'lt IE 9' );
+	wp_enqueue_script( 'zeedynamic-html5shiv', get_template_directory_uri() . '/js/html5shiv.min.js', array(), '3.7.3' );
+	wp_script_add_data( 'zeedynamic-html5shiv', 'conditional', 'lt IE 9' );
 
 	// Register and enqueue navigation.js
-	wp_enqueue_script( 'zeedynamic-jquery-navigation', get_template_directory_uri() .'/js/navigation.js', array('jquery') );
+	wp_enqueue_script( 'zeedynamic-jquery-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20160421' );
 	
 	// Passing Parameters to Navigation.js Javascript
 	wp_localize_script( 'zeedynamic-jquery-navigation', 'zeedynamic_menu_title', esc_html__( 'Menu', 'zeedynamic' ) );
