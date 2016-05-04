@@ -11,7 +11,7 @@ add_action( 'after_setup_theme', 'zeedynamic_theme_addons_setup' );
 
 function zeedynamic_theme_addons_setup() {
 
-	// Add Theme Support for Anderson Pro Plugin
+	// Add Theme Support for zeeDynamic Pro Plugin
 	add_theme_support( 'zeedynamic-pro' );
 	
 	// Add Theme Support for ThemeZee Plugins
