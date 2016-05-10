@@ -71,6 +71,9 @@ function zeedynamic_setup() {
 	// Add extra theme styling to the visual editor
 	add_editor_style( array( 'css/editor-style.css', zeedynamic_google_fonts_url() ) );
 	
+	// Add Theme Support for Selective Refresh in Customizer
+	add_theme_support( 'customize-selective-refresh-widgets' );
+	
 }
 endif; // zeedynamic_setup
 add_action( 'after_setup_theme', 'zeedynamic_setup' );

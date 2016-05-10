@@ -2,6 +2,14 @@
 zeeDynamic Changelog
 ===================================
 
+Version 1.1.2
+-----------------------------------
+[added] selective refresh support in customizer for sidebars and widgets
+[added] version numbers to wp_enqueue_style and wp_enqueue_script functions
+[added] editor-style.css
+[updated] flexlider, html5shiv and Genericons
+[tweaked] styling of lists, tables and blockquotes
+
 Version 1.1.1
 -----------------------------------
 [added] support for new custom logo feature from WordPress 4.5
