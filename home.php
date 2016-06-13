@@ -6,50 +6,49 @@
  *
  * @package zeeDynamic
  */
- 
-get_header(); 
 
-// Get Theme Options from Database
+get_header();
+
+// Get Theme Options from Database.
 $theme_options = zeedynamic_theme_options();
 ?>
-		
+
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-					
+
 			<?php
-			// Display Slider
-			if ( true == $theme_options['slider_blog'] ) :
+			// Display Slider.
+			if ( true === $theme_options['slider_blog'] ) :
 
 				get_template_part( 'template-parts/post-slider' );
-				
-			endif; 
 
-			// Display Latest Posts Title
-			if ( $theme_options['blog_title'] <> '' ) : ?>
-						
+			endif;
+
+			// Display Latest Posts Title.
+			if ( '' !== $theme_options['blog_title'] ) : ?>
+
 				<header class="page-header">
-					
-					<h1 class="archive-title"><?php echo wp_kses_post($theme_options['blog_title']); ?></h1>
+
+					<h1 class="archive-title"><?php echo wp_kses_post( $theme_options['blog_title'] ); ?></h1>
 
 				</header><!-- .page-header -->
-		
+
 			<?php endif; ?>
-			
-		 
-			<?php if (have_posts()) : while (have_posts()) : the_post();
-		
-				get_template_part( 'template-parts/content', $theme_options['post_layout'] );
-		
+
+
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+					get_template_part( 'template-parts/content', $theme_options['post_layout'] );
+
 				endwhile;
 
-				// Display Pagination	
 				zeedynamic_pagination();
 
 			endif; ?>
-			
+
 		</main><!-- #main -->
 	</section><!-- #primary -->
-	
+
 	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

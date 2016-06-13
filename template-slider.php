@@ -7,7 +7,7 @@
  * @package zeeDynamic
  */
 
-get_header(); 
+get_header();
 ?>
 
 	<section id="primary" class="content-area">
@@ -15,10 +15,10 @@ get_header();
 				
 			<?php get_template_part( 'template-parts/post-slider' ); ?>
 			
-			<?php while (have_posts()) : the_post();
+			<?php while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' );
-				
+
 				comments_template();
 
 			endwhile; ?>
