@@ -675,8 +675,8 @@ textarea {
 	margin: 0;
 }
 
-.site-branding a:link, 
-.site-branding a:visited, 
+.site-branding a:link,
+.site-branding a:visited,
 .site-branding a:hover {
 	text-decoration: none;
 	border: none;
@@ -693,7 +693,7 @@ textarea {
 	text-decoration: none;
 }
 
-.site-title a:link, 
+.site-title a:link,
 .site-title a:visited {
 	color: #e84747;
 	-webkit-transition: all 0.2s ease;
@@ -775,7 +775,7 @@ textarea {
 	padding: 0;
 	list-style-type: none;
 	list-style-position: outside;
-	position: relative;	
+	position: relative;
 }
 
 .main-navigation-menu li {
@@ -812,7 +812,7 @@ textarea {
 	color: #fff;
 }
 
-.main-navigation-menu a:link, 
+.main-navigation-menu a:link,
 .main-navigation-menu a:visited {
 	color: #fff;
 	text-decoration: none;
@@ -882,15 +882,15 @@ textarea {
 	border-top: none;
 }
 
-.main-navigation-menu li:hover ul ul, 
-.main-navigation-menu li:hover ul ul ul, 
+.main-navigation-menu li:hover ul ul,
+.main-navigation-menu li:hover ul ul ul,
 .main-navigation-menu li:hover ul ul ul ul {
 	display: none;
 }
 
-.main-navigation-menu li:hover ul, 
-.main-navigation-menu li li:hover ul, 
-.main-navigation-menu li li li:hover ul, 
+.main-navigation-menu li:hover ul,
+.main-navigation-menu li li:hover ul,
+.main-navigation-menu li li li:hover ul,
 .main-navigation-menu li li li li:hover ul {
 	display: block;
 }
@@ -1014,12 +1014,12 @@ textarea {
 	margin: 0.5em 0 0.5em 1em;
 }
 
-.widget-title a:link, 
+.widget-title a:link,
 .widget-title a:visited  {
 	color: #fff;
 }
 
-.widget-title a:hover, 
+.widget-title a:hover,
 .widget-title a:active  {
 	color: #fff;
 	text-decoration: underline;
@@ -1231,14 +1231,14 @@ textarea {
 /*--------------------------------------------------------------
 # 12.0 - Posts and pages
 --------------------------------------------------------------*/
-.type-post, 
-.type-page, 
+.type-post,
+.type-page,
 .type-attachment  {
 	margin: 0 0 1.5em;
 	max-width: 100%;
 }
 
-.page-title, 
+.page-title,
 .entry-title {
 	display: inline;
 	font-family: 'Francois One', sans-serif;
@@ -1252,7 +1252,7 @@ textarea {
 	word-wrap: break-word;
 }
 
-.entry-title a:link, 
+.entry-title a:link,
 .entry-title a:visited {
 	color: #333333;
 	text-decoration: none;
@@ -1263,7 +1263,7 @@ textarea {
 	transition: all 0.2s ease;
 }
 
-.entry-title a:hover, 
+.entry-title a:hover,
 .entry-title a:active {
 	color: #e84747;
 }
@@ -1293,12 +1293,12 @@ textarea {
 	text-decoration: none;
 }
 
-.more-link:link, 
+.more-link:link,
 .more-link:visited  {
 	color: #fff;
 }
 
-.more-link:hover, 
+.more-link:hover,
 .more-link:active {
 	background: #333333;
 }
@@ -1307,7 +1307,7 @@ textarea {
 .small-archive-post {
 	padding: 0 0 1.5em;
 	border-bottom: 1px solid #ddd;
-} 
+}
 
 .small-archive-post .wp-post-image {
 	float: left;
@@ -1345,17 +1345,17 @@ textarea {
 	font-size: 0.875rem;
 }
 
-.entry-meta a:link, 
+.entry-meta a:link,
 .entry-meta a:visited {
 	color: #999;
 }
 
-.entry-meta a:hover, 
+.entry-meta a:hover,
 .entry-meta a:active {
 	color: #666;
 }
 
-.entry-meta .meta-date, 
+.entry-meta .meta-date,
 .entry-meta .meta-author {
 	margin-right: 1em;
 }
@@ -1422,16 +1422,16 @@ textarea {
 	text-transform: uppercase;
 }
 
-.widget_tag_cloud .tagcloud a:link, 
+.widget_tag_cloud .tagcloud a:link,
 .widget_tag_cloud .tagcloud a:visited,
-.entry-tags .meta-tags a:link, 
+.entry-tags .meta-tags a:link,
 .entry-tags .meta-tags a:visited {
 	color: #fff;
 }
 
-.widget_tag_cloud .tagcloud a:hover, 
+.widget_tag_cloud .tagcloud a:hover,
 .widget_tag_cloud .tagcloud a:active,
-.entry-tags .meta-tags a:hover, 
+.entry-tags .meta-tags a:hover,
 .entry-tags .meta-tags a:active {
 	background: #333333;
 }
@@ -1473,7 +1473,7 @@ textarea {
 	display: inline-block;
 	margin: 0;
 	padding: 0.5em 1em;
-    text-align: center;
+	text-align: center;
 	text-decoration: none;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1482,7 +1482,7 @@ textarea {
 	background: #333333;
 }
 
-.post-pagination a:link, 
+.post-pagination a:link,
 .post-pagination a:visited {
 	color: #fff;
 	-webkit-transition: all 0.2s ease;
@@ -1845,19 +1845,19 @@ object {
 ## 14.2 - Desktop Large ( < 1120px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 70em) {
-	
+
 	.widget-magazine-posts .large-post .entry-title {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## 14.2 - Desktop Medium ( < 1040px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 65em) {
-	
+
 
 
 }
@@ -1866,57 +1866,57 @@ object {
 ## 14.3 - Desktop Small ( < 960px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 60em) {
-	
+
 	.site-branding {
 		float: none;
 		text-align: center;
 		margin: 0;
 	}
-	
+
 	.header-widget {
 		float: none;
 		margin: 0.5em 0 0;
 		text-align: center;
 	}
-	
+
 	/*** Mobile Main Navigation ***/
-	
+
 	/* Reset */
-	.primary-navigation, 
+	.primary-navigation,
 	.main-navigation-menu li {
 		float: none;
 		position: static;
 	}
-	
+
 	.main-navigation-menu ul {
 		position: static;
 		display: block;
 	}
-	
+
 	.main-navigation-menu ul a {
 		width: auto;
 		float: none;
 	}
-	
+
 	.main-navigation-menu li ul ul {
 		margin-left: 0;
 	}
-	
-	.main-navigation-menu li:hover ul ul, 
-	.main-navigation-menu li:hover ul ul ul, 
+
+	.main-navigation-menu li:hover ul ul,
+	.main-navigation-menu li:hover ul ul ul,
 	.main-navigation-menu li:hover ul ul ul ul,
-	.main-navigation-menu li:hover ul, 
-	.main-navigation-menu li li:hover ul, 
+	.main-navigation-menu li:hover ul,
+	.main-navigation-menu li li:hover ul,
 	.main-navigation-menu li li li:hover ul,
 	.main-navigation-menu li li li li:hover ul {
 		display: inline;
 	}
-	
+
 	.main-navigation-menu > .menu-item-has-children > a:after,
 	.main-navigation-menu ul .menu-item-has-children > a:after {
 		display: none;
 	}
-	
+
 	/* Main Navigation Toggle */
 	.main-navigation-toggle {
 		display: block;
@@ -1927,14 +1927,14 @@ object {
 		background: #333333;
 		text-align: left;
 	}
-	
+
 	.main-navigation-toggle:hover,
 	.main-navigation-toggle:focus,
 	.main-navigation-toggle:active {
 		cursor: pointer;
 		background: #e84747;
 	}
-	
+
 	.main-navigation-toggle:after {
 		float: left;
 		display: inline-block;
@@ -1949,7 +1949,7 @@ object {
 		content: '\f419';
 		color: #fff;
 	}
-	
+
 	/* Main Navigation Menu */
 	.main-navigation-menu {
 		float: left;
@@ -1957,7 +1957,7 @@ object {
 		display: none;
 		border-top: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	.main-navigation-menu a {
 		display: block;
 		clear: left;
@@ -1966,7 +1966,7 @@ object {
 		padding: 1em 1.5em;
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	.main-navigation-menu li:last-child a {
 		border-bottom: none;
 	}
@@ -1976,38 +1976,38 @@ object {
 		width: 100%;
 		border: none;
 	}
-	
+
 	.main-navigation-menu ul a {
 		display: block;
 		width: 100%;
 		padding-left: 2em;
 	}
-	
+
 	.main-navigation-menu ul li ul a {
 		padding-left: 4em;
 	}
-	
+
 	.main-navigation-menu ul li ul li ul a {
 		padding-left: 6em;
 	}
-	
+
 	.main-navigation-menu ul li ul li ul li ul a {
 		padding-left: 8em;
 	}
-	
+
 	.main-navigation-menu ul li:last-child a {
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	.main-navigation-menu ul ul {
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	.main-navigation-menu li.current-menu-item > a {
 		background: none;
 		text-decoration: underline;
 	}
-	
+
 	/* Mobile Submenu Dropdowns */
 	.main-navigation-menu .submenu-dropdown-toggle {
 		float: right;
@@ -2015,11 +2015,11 @@ object {
 		margin: 0;
 		padding: 0.6em 1.2em;
 	}
-	
+
 	.main-navigation-menu .submenu-dropdown-toggle:hover {
 		cursor: pointer;
 	}
-	
+
 	.main-navigation-menu .submenu-dropdown-toggle:before {
 		font-size: 32px;
 		line-height: 1;
@@ -2031,78 +2031,78 @@ object {
 		content: '\f431';
 		color: #fff;
 	}
-	
+
 	.main-navigation-menu .submenu-dropdown-toggle:hover:before {
 		color: #aaa;
 	}
-	
+
 	.main-navigation-menu .submenu-dropdown-toggle.active:before {
 		content: '\f432';
 	}
-	
+
 	.main-navigation-menu ul .submenu-dropdown-toggle {
 		padding: 0.45em 1em;
 	}
-	
+
 	.main-navigation-menu ul .submenu-dropdown-toggle:before {
 		font-size: 24px;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## 14.4 - Tablet Large ( < 880px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 55em) {
-	
-	.content-area, 
+
+	.content-area,
 	.site-content .fullwidth-content-area {
 		float: none;
 		width: 100%;
 		padding: 0;
 	}
-	
+
 	.sidebar {
 		float: none;
 		padding: 0;
 		width: 100%;
 	}
-	
+
 	/* Magazine Post Widgets */
 	.widget-magazine-posts .large-post .entry-title 	{
 		font-size: 20px;
 		font-size: 1.25rem;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## 14.5 - Tablet Medium ( < 800px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 50em) {
-	
+
 	/* Magazine Post Widgets */
 	.widget-magazine-posts .large-post .entry-title 	{
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## 14.7 - Mobile Extra Large ( < 640px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 40em) {
-	
+
 	/* Magazine Post Widgets */
 	.widget-magazine-posts-grid .magazine-posts-grid-row {
 		margin-right: 0;
 	}
-	
+
 	.widget-magazine-posts-grid .medium-post-row {
 		margin-right: -1.2em;
 	}
-	
+
 	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post,
 	.widget-magazine-posts-columns .magazine-posts-column-left {
 		float: none;
@@ -2116,17 +2116,17 @@ object {
 		margin-left: 0;
 		padding-left: 0;
 	}
-	
+
 	.widget-magazine-posts .large-post .wp-post-image {
 		float: left;
 		margin: 0 1.5em 0 0;
 		max-width: 50%;
 	}
-	
+
 	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
 		clear: left;
 	}
-	
+
 	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post .wp-post-image {
 		margin-bottom: 1em;
 	}
@@ -2134,7 +2134,7 @@ object {
 	.widget-magazine-posts .large-post .entry-content {
 		display: none;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
@@ -2145,30 +2145,30 @@ object {
 	.small-archive-post .entry-content {
 		display: none;
 	}
-	
+
 	.widget-magazine-posts-grid .medium-post-row {
 		margin-right: 0;
 	}
-	
+
 	.widget-magazine-posts .medium-post {
 		float: none;
 		width: 100%;
 		padding-right: 0;
 	}
-	
+
 	.widget-magazine-posts .medium-post .wp-post-image {
 		float: left;
 		margin: 0 1em 0 0;
 		max-width: 120px;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## 14.9 - Mobile Medium ( < 480px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 30em) {
-	
+
 	.container {
 		padding: 0 1.5em;
 	}
@@ -2176,34 +2176,34 @@ object {
 	.site-content {
 		padding-top: 1.5em;
 	}
-	
+
 	.header-main {
 		padding-top: 1.5em;
 		padding-bottom: 1.5em;
 	}
-	
+
 	.page-title,
 	.entry-title {
 		font-size: 22px;
 		font-size: 1.375rem;
 	}
-	
+
 	.alignright, .alignleft {
 		float: none;
 		margin: 1em 0;
 	}
-	
+
 	/* Magazine Homepage: Category Post Widgets */
 	.widget-magazine-posts .medium-post .wp-post-image,
 	.widget-magazine-posts .small-post .wp-post-image {
 		max-width: 30%;
 	}
-	
+
 	.widget-magazine-posts .medium-post .entry-title {
 		font-size: 14px;
 		font-size: 0.875rem;
 	}
-	
+
 	.widget-magazine-posts .large-post .wp-post-image,
 	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post .wp-post-image {
 		float: none;
@@ -2215,52 +2215,52 @@ object {
 	.widget-magazine-posts .large-post .entry-content .more-link {
 		display: inline-block;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## 14.9.5 - Mobile Small ( < 320px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 25em) {
-	
+
 	.small-archive-post .entry-title {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## 14.10 - Mobile Small ( < 320px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 20em) {
-	
+
 	.site-branding .site-title {
 		font-size: 28px;
 		font-size: 1.75rem;
 	}
-	
+
 	.page-title,
 	.entry-title {
 		font-size: 20px;
 		font-size: 1.25rem;
 	}
-	
+
 	.entry-meta .meta-date,
 	.entry-meta .meta-author,
 	.entry-meta .meta-category {
 		display: block;
 	}
-	
+
 	.small-archive-post .entry-title {
 		font-size: 16px;
 		font-size: 1rem;
 	}
-	
+
 	.small-archive-post .entry-meta {
 		display: none;
 	}
-	
+
 	.widget-magazine-posts .large-post .entry-title {
 		font-size: 20px;
 		font-size: 1.25rem;
@@ -2281,7 +2281,7 @@ object {
 	padding-right: 0;
 	padding-left: 4em;
 }
-	
+
 .sidebar-left .sidebar {
 	float: left;
 }
@@ -2292,9 +2292,9 @@ object {
 
 /* Ensure navigation is visible on desktop view */
 @media only screen and (min-width: 60.001em) {
-	
+
 	.main-navigation-menu {
 		display: block !important;
 	}
-	
+
 }

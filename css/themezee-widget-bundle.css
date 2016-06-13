@@ -9,24 +9,24 @@
  * @package zeeDynamic
  */
 
- 
+
 /*--------------------------------------------------------------
 # General Styles
 ---------------------------------------------------------------- */
 
 /* Clearing Floats */
-.tzwb-clearfix:before, 
-.tzwb-clearfix:after {  
+.tzwb-clearfix:before,
+.tzwb-clearfix:after {
 	content: " ";
-	display: table;  
-}  
+	display: table;
+}
 
-.tzwb-clearfix:after {  
+.tzwb-clearfix:after {
 	clear: both;
-}  
+}
 
 .tzwb-clearfix {
-    *zoom: 1; /* For IE 6/7 only */  
+	*zoom: 1; /* For IE 6/7 only */
 }
 
 
@@ -125,12 +125,12 @@
 	text-transform: uppercase;
 }
 
-.tzwb-tabbed-content .tzwb-tabnavi li a:link, 
+.tzwb-tabbed-content .tzwb-tabnavi li a:link,
 .tzwb-tabbed-content .tzwb-tabnavi li a:visited  {
 	color: #fff;
 }
 
-.tzwb-tabbed-content .tzwb-tabnavi li a:hover, 
+.tzwb-tabbed-content .tzwb-tabnavi li a:hover,
 .tzwb-tabbed-content .tzwb-tabnavi li a:active {
 	background: #e84747;
 	text-decoration: none;
