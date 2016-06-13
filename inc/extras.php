@@ -5,16 +5,14 @@
  * @package zeeDynamic
  */
 
- 
 if ( ! function_exists( 'zeedynamic_default_menu' ) ) :
 /**
  * Display default page as navigation if no custom menu was set
- *
  */
 function zeedynamic_default_menu() {
-	
-	echo '<ul id="menu-main-navigation" class="main-navigation-menu menu">'. wp_list_pages('title_li=&echo=0') .'</ul>';
-	
+
+	echo '<ul id="menu-main-navigation" class="main-navigation-menu menu">'. wp_list_pages( 'title_li=&echo=0' ) .'</ul>';
+
 }
 endif;
 
@@ -26,15 +24,15 @@ endif;
  * @return array
  */
 function zeedynamic_body_classes( $classes ) {
-	
-	// Get Theme Options from Database
+
+	// Get theme options from database.
 	$theme_options = zeedynamic_theme_options();
-		
-	// Switch Sidebar Layout to left
+
+	// Switch sidebar layout to left.
 	if ( 'left-sidebar' == $theme_options['layout'] ) {
 		$classes[] = 'sidebar-left';
 	}
-	
+
 	return $classes;
 }
 add_filter( 'body_class', 'zeedynamic_body_classes' );
@@ -43,19 +41,19 @@ add_filter( 'body_class', 'zeedynamic_body_classes' );
 /**
  * Change excerpt length for default posts
  *
- * @param int $length Length of excerpt in number of words
+ * @param int $length Length of excerpt in number of words.
  * @return int
  */
-function zeedynamic_excerpt_length($length) {
-	
-	// Get Theme Options from Database
+function zeedynamic_excerpt_length( $length ) {
+
+	// Get theme options from database.
 	$theme_options = zeedynamic_theme_options();
 
-	// Return Excerpt Text
-	if ( isset($theme_options['excerpt_length']) and $theme_options['excerpt_length'] >= 0 ) :
+	// Return excerpt text.
+	if ( isset( $theme_options['excerpt_length'] ) and $theme_options['excerpt_length'] >= 0 ) :
 		return absint( $theme_options['excerpt_length'] );
 	else :
-		return 30; // number of words
+		return 30; // Number of words.
 	endif;
 }
 add_filter( 'excerpt_length', 'zeedynamic_excerpt_length' );
@@ -64,21 +62,21 @@ add_filter( 'excerpt_length', 'zeedynamic_excerpt_length' );
 /**
  * Function to change excerpt length for posts in category posts widgets
  *
- * @param int $length Length of excerpt in number of words
+ * @param int $length Length of excerpt in number of words.
  * @return int
  */
-function zeedynamic_magazine_posts_excerpt_length($length) {
-    return 15;
+function zeedynamic_magazine_posts_excerpt_length( $length ) {
+	return 15;
 }
 
 /**
  * Change excerpt more text for posts
  *
- * @param string $more_text Excerpt More Text
+ * @param String $more_text Excerpt More Text.
  * @return string
  */
 function zeedynamic_excerpt_more( $more_text ) {
-	
+
 	return '';
 
 }
@@ -86,7 +84,6 @@ add_filter( 'excerpt_more', 'zeedynamic_excerpt_more' );
 
 /**
  * Set wrapper start for wooCommerce
- *
  */
 function zeedynamic_wrapper_start() {
 	echo '<section id="primary" class="content-area">';
@@ -98,7 +95,6 @@ add_action( 'woocommerce_before_main_content', 'zeedynamic_wrapper_start', 10 );
 
 /**
  * Set wrapper end for wooCommerce
- *
  */
 function zeedynamic_wrapper_end() {
 	echo '</main><!-- #main -->';
