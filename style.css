@@ -649,8 +649,6 @@ textarea {
 	float: left;
 	width: 72%;
 	padding-right: 2em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -703,9 +701,6 @@ textarea {
 .site-title a:visited {
 	color: #e84747;
 	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -798,9 +793,6 @@ textarea {
 	text-transform: uppercase;
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -854,9 +846,6 @@ textarea {
 	font-size: 0.8125rem;
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 	-webkit-transition: none;
-	-moz-transition: none;
-	-ms-transition: none;
-	-o-transition: none;
 	transition: none;
 }
 
@@ -1059,8 +1048,6 @@ textarea {
 	margin: 0;
 	width: 100%;
 	padding: 0.3em 3em 0.3em 0.6em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 }
@@ -1136,8 +1123,6 @@ textarea {
 	display: block;
 	width: 33.33333333%;
 	padding-right: 2em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -1156,8 +1141,6 @@ textarea {
 	float: left;
 	display: block;
 	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -1188,8 +1171,6 @@ textarea {
 	float: left;
 	width: 50%;
 	padding-right: 2em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -1201,8 +1182,6 @@ textarea {
 .widget-magazine-posts-columns .magazine-posts-columns .magazine-posts-columns-content .magazine-posts-columns-post-list {
 	float: left;
 	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -1215,8 +1194,6 @@ textarea {
 	float: left;
 	width: 50%;
 	padding-right: 1em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -1224,8 +1201,6 @@ textarea {
 	margin-left: 50%;
 	width: 50%;
 	padding-left: 1em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -1263,9 +1238,6 @@ textarea {
 	color: #333333;
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -1492,9 +1464,6 @@ textarea {
 .post-pagination a:visited {
 	color: #fff;
 	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-ms-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -1810,8 +1779,6 @@ object {
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 

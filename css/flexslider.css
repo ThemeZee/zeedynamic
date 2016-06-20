@@ -90,9 +90,6 @@ html[xmlns] .zeeflexslider .zeeslides {
 .zeeflex-viewport {
 	max-height: 2000px;
 	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
 
@@ -112,8 +109,6 @@ html[xmlns] .zeeflexslider .zeeslides {
 	border-top: 10px solid #e84747;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -155,14 +150,11 @@ html[xmlns] .zeeflexslider .zeeslides {
 	height: 40px;
 	background: #e84747;
 	text-align: left;
-	color #fff;
+	color: #fff;
 	font-size: 0;
 	cursor: pointer;
 	z-index: 10;
 	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-ms-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
 
@@ -234,7 +226,3 @@ html[xmlns] .zeeflexslider .zeeslides {
 	background: #e84747;
 	cursor: default;
 }
-
-/*--------------------------------------------------------------
-# Media Queries
---------------------------------------------------------------*/
