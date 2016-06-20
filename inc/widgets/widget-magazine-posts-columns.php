@@ -202,7 +202,7 @@ class zeeDynamic_Magazine_Posts_Columns_Widget extends WP_Widget {
 
 						<header class="entry-header">
 
-							<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'zeedynamic-thumbnail-large' ); ?></a>
+							<?php zeedynamic_post_image( 'zeedynamic-thumbnail-large' ); ?>
 
 							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
@@ -221,9 +221,7 @@ class zeeDynamic_Magazine_Posts_Columns_Widget extends WP_Widget {
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'small-post clearfix' ); ?>>
 
-						<?php if ( has_post_thumbnail() ) : ?>
-							<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'zeedynamic-thumbnail-small' ); ?></a>
-						<?php endif; ?>
+						<?php zeedynamic_post_image( 'zeedynamic-thumbnail-small' ); ?>
 
 						<div class="small-post-content">
 
