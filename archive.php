@@ -16,7 +16,8 @@ $theme_options = zeedynamic_theme_options();
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php
+		if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php the_archive_title( '<h1 class="archive-title">', '</h1>' ); ?>
@@ -32,6 +33,10 @@ $theme_options = zeedynamic_theme_options();
 			endwhile;
 
 			zeedynamic_pagination();
+
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
 

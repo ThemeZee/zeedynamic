@@ -16,7 +16,9 @@ $theme_options = zeedynamic_theme_options();
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
+		<?php
+		if ( have_posts() ) :
+
 			// Display Slider.
 			if ( true === $theme_options['slider_blog'] ) :
 
@@ -33,18 +35,22 @@ $theme_options = zeedynamic_theme_options();
 
 				</header><!-- .page-header -->
 
-			<?php endif; ?>
+			<?php endif;
 
 
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post();
 
-					get_template_part( 'template-parts/content', $theme_options['post_layout'] );
+				get_template_part( 'template-parts/content', $theme_options['post_layout'] );
 
-				endwhile;
+			endwhile;
 
-				zeedynamic_pagination();
+			zeedynamic_pagination();
 
-			endif; ?>
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif; ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
