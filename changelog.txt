@@ -2,6 +2,13 @@
 zeeDynamic Changelog
 ===================================
 
+Version 1.1.4
+-----------------------------------
+[added] content-none.php template file
+[added] post image template function
+[added] new comments navigation function
+[improved] accessibility of navigation menus
+
 Version 1.1.3
 -----------------------------------
 [added] added alt and srcset attributes to custom header image

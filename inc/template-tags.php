@@ -132,7 +132,7 @@ if ( ! function_exists( 'zeedynamic_post_image' ) ) :
  * @param string $size Post thumbnail size.
  * @param array  $attr Post thumbnail attributes.
  */
-function zeedynamic_post_image( $size = '', $attr = array() ) {
+function zeedynamic_post_image( $size = 'post-thumbnail', $attr = array() ) {
 
 	// Display Post Thumbnail.
 	if ( has_post_thumbnail() ) : ?>
