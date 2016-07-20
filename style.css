@@ -758,10 +758,6 @@ textarea {
 /*--------------------------------------------------------------
 ## 10.1 - Main Navigation
 --------------------------------------------------------------*/
-.primary-navigation-wrap {
-	background: #fff;
-}
-
 .primary-navigation {
 	color: #fff;
 	background: #333333;
@@ -879,6 +875,7 @@ textarea {
 }
 
 .main-navigation-menu li.menu-item-has-children:hover > ul,
+.main-navigation-menu li.page_item_has_children:hover > ul,
 .main-navigation-menu li.menu-item-has-children[aria-expanded="true"] > ul {
 	display: block;
 }
@@ -1880,14 +1877,14 @@ object {
 	/*** Mobile Main Navigation ***/
 
 	/* Reset */
-	.primary-navigation,
 	.main-navigation-menu li {
 		float: none;
 		position: static;
 	}
 
 	.main-navigation-menu ul,
-	.mega-menu-item .mega-menu-content {
+	.mega-menu-item .mega-menu-content,
+	.mega-menu-item .mega-menu-content .mega-menu-widget {
 		position: static;
 		display: block;
 		left: auto;
@@ -1902,6 +1899,7 @@ object {
 	.main-navigation-menu li ul ul {
 		top: auto;
 		left: auto;
+		margin: 0;
 	}
 
 	.main-navigation-menu > .menu-item-has-children > a:after,
@@ -1959,10 +1957,6 @@ object {
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
 
-	.main-navigation-menu li:last-child a {
-		border-bottom: none;
-	}
-
 	.main-navigation-menu ul {
 		float: none;
 		width: 100%;
@@ -1975,6 +1969,10 @@ object {
 		padding-left: 2em;
 	}
 
+	.main-navigation-menu ul li:last-child > a {
+		border-bottom: none;
+	}
+
 	.main-navigation-menu ul li ul a {
 		padding-left: 4em;
 	}
@@ -1985,10 +1983,6 @@ object {
 
 	.main-navigation-menu ul li ul li ul li ul a {
 		padding-left: 8em;
-	}
-
-	.main-navigation-menu ul li:last-child a {
-		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
 
 	.main-navigation-menu ul ul {
@@ -2038,6 +2032,22 @@ object {
 
 	.main-navigation-menu ul .submenu-dropdown-toggle:before {
 		font-size: 24px;
+	}
+
+	/* Mega Menu Styling */
+	.mega-menu-item .mega-menu-content {
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+	}
+
+	.mega-menu-item .mega-menu-two-columns > li,
+	.mega-menu-item .mega-menu-three-columns > li,
+	.mega-menu-item .mega-menu-five-columns > li {
+		width: 100%;
+	}
+
+	.mega-menu-item .mega-menu-four-columns > li,
+	.mega-menu-item .mega-menu-six-columns > li {
+		width: 50%;
 	}
 
 }
@@ -2125,6 +2135,12 @@ object {
 
 	.widget-magazine-posts .large-post .entry-content {
 		display: none;
+	}
+
+	/* Mega Menu Styling */
+	.mega-menu-item .mega-menu-four-columns > li,
+	.mega-menu-item .mega-menu-six-columns > li {
+		width: 100%;
 	}
 
 }
