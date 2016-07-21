@@ -45,7 +45,6 @@ function zeedynamic_theme_info_page() {
 		<div class="important-links clearfix">
 			<p><strong><?php esc_html_e( 'Theme Links', 'zeedynamic' ); ?>:</strong>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/zeedynamic/', 'zeedynamic' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=theme-page' ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'zeedynamic' ); ?></a>
-				<a href="<?php echo get_template_directory_uri(); ?>/changelog.txt" target="_blank"><?php esc_html_e( 'Changelog', 'zeedynamic' ); ?></a>
 				<a href="<?php echo esc_url( 'http://preview.themezee.com/zeedynamic/?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=demo' ); ?>" target="_blank"><?php esc_html_e( 'Theme Demo', 'zeedynamic' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/zeedynamic-documentation/', 'zeedynamic' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=documentation' ); ?>" target="_blank"><?php esc_html_e( 'Theme Documentation', 'zeedynamic' ); ?></a>
 				<a href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/zeedynamic?filter=5' ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'zeedynamic' ); ?></a>

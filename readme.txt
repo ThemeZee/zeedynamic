@@ -2,11 +2,11 @@
 Author URI: https://themezee.com
 Theme URI: https://themezee.com/themes/zeedynamic/
 Contributors: themezee
-Tags: two-columns, light, purple, custom-background, custom-header, custom-menu, editor-style, blog, entertainment, news, holiday, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, fluid-layout, responsive-layout, one-column, left-sidebar, right-sidebar, three-columns, black, red, blue, silver, white, green, gray
+Tags: two-columns, light, purple, custom-background, custom-header, custom-menu, editor-style, blog, entertainment, news, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, fluid-layout, responsive-layout, one-column, left-sidebar, right-sidebar, three-columns, black, red, blue, silver, white, green, gray
 Requires at least: 4.4
 Tested up to: 4.6
-Stable tag: 1.1.4
 License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 zeeDynamic is a fully responsive WordPress theme with strong colors and bold fonts
 
@@ -14,7 +14,23 @@ zeeDynamic is a fully responsive WordPress theme with strong colors and bold fon
 
 zeeDynamic is a fully responsive WordPress theme with strong colors and bold fonts. The theme fits perfectly for any news, magazine or blog website. The highlight of zeeDynamic is the flexible magazine homepage template and the stunning featured post slider. Of course the theme supports the newest WordPress core features.
 
+For more information about zeeDynamic please go to https://themezee.com/themes/zeedynamic/
+
+== Installation ==
+
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in zeeDynamic in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to https://themezee.com/docs/zeedynamic-documentation/ for a guide on how to customize this theme.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+
 == Changelog ==
+
+= 1.1.5 =
+* added readme.txt file
+* improved styling of navigation menus
+* added styling for mega menu plugin
+* updated tags in style.css
 
 = 1.1.4 =
 * added content-none.php template file
@@ -62,4 +78,61 @@ zeeDynamic is a fully responsive WordPress theme with strong colors and bold fon
 * fixed undefined variables in template-tags.php
 
 = 1.0 =
-* Initial Release
+Initial Release
+
+== Copyright ==
+
+zeeDynamic WordPress Theme, Copyright 2016 ThemeZee.com
+zeeDynamic is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+== Ressources ==
+
+zeeDynamic bundles the following third-party resources:
+
+1. Genericons Icon Font - http://genericons.com
+License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: 2015 Automattic, Inc., https://automattic.com/
+
+2. Underscores - http://underscores.me/
+License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: 2012-2015 Automattic, Inc., https://automattic.com/
+
+3. normalize.css - http://necolas.github.io/normalize.css/
+License: Distributed under the terms of the MIT License (http://opensource.org/licenses/MIT)
+Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
+
+4. FlexSlider - https://github.com/woothemes/FlexSlider
+License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: 2015 WooThemes, http://www.woothemes.com
+
+5. Francois One Font - https://www.google.com/fonts/specimen/Francois+One
+License: Distributed under the terms of the SIL Open Font License 1.1 (http://scripts.sil.org/OFL)
+Copyright: 2016 Vernon Adams
+
+6. Open Sans Font - https://www.google.com/fonts/specimen/Open+Sans
+License: Distributed under the terms of the Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
+Copyright: 2014 Steve Matteson
+
+7. Images used in screenshot.jpg are all from Pixabay - http://pixabay.com
+
+Image 1: https://pixabay.com/en/paris-architecture-france-674964/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2015 Gerhard Boegner (https://pixabay.com/en/users/bogitw-851103/)
+
+Image 2: https://pixabay.com/en/popcorn-movie-party-entertainment-1085072/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2015 Deborah Breen Whiting (https://pixabay.com/en/users/dbreen-1643989/)
+
+Image 3: https://pixabay.com/en/white-tree-nymph-1218884/
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: 2009 Jondolar Schnurr (https://pixabay.com/en/users/SHAWSHANK61-1931526/)
