@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.1.6 =
+* added Right-to-Left language support
+
 = 1.1.5 =
 * added readme.txt file
 * improved styling of navigation menus

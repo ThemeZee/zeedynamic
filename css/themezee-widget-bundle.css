@@ -17,8 +17,8 @@
 /* Clearing Floats */
 .tzwb-clearfix:before,
 .tzwb-clearfix:after {
-	content: " ";
 	display: table;
+	content: " ";
 }
 
 .tzwb-clearfix:after {
@@ -42,9 +42,9 @@
 # Recent Posts Widget
 ---------------------------------------------------------------- */
 .tzwb-recent-posts .tzwb-posts-list li {
-	list-style: none;
 	overflow: auto;
 	padding: 0;
+	list-style: none;
 }
 
 .tzwb-recent-posts .tzwb-posts-list .tzwb-excerpt p {
@@ -67,9 +67,9 @@
 # Recent Comments Widget
 ---------------------------------------------------------------- */
 .tzwb-recent-comments .tzwb-comments-list li {
-	list-style: none;
-	margin-bottom: 0.4em;
 	overflow: auto;
+	margin-bottom: 0.4em;
+	list-style: none;
 }
 
 .tzwb-recent-comments .tzwb-comments-list .avatar {
@@ -93,36 +93,36 @@
 # Tabbed Content Widget
 ---------------------------------------------------------------- */
 .tzwb-tabbed-content .tzwb-tabnavi-wrap {
+	overflow: auto;
 	margin: 0 -0.3em;
 	padding: 0;
-	overflow: auto;
 	list-style: none;
 }
 
 .tzwb-tabbed-content .tzwb-tabnavi {
+	position: relative;
 	list-style: none;
 	list-style-position: outside;
-	position: relative;
 }
 
 .tzwb-tabbed-content .tzwb-tabnavi li {
-	float: left;
-	list-style: none;
 	position: relative;
+	float: left;
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
 .tzwb-tabbed-content .tzwb-tabnavi li a {
 	display: block;
 	margin: 0 0.3em 0.3em 0;
 	padding: 0.3em 0.8em;
+	background: #333333;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
 	font-size: 13px;
 	font-size: 0.8125rem;
-	font-weight: bold;
-	color: #fff;
-	background: #333333;
-	text-transform: uppercase;
 }
 
 .tzwb-tabbed-content .tzwb-tabnavi li a:link,
@@ -137,19 +137,19 @@
 }
 
 .tzwb-tabbed-content .tzwb-tabnavi li a.current-tab {
-	color: #fff;
 	background: #e84747;
+	color: #fff;
 }
 
 .tzwb-tabbed-content .tzwb-tabcontent {
-	padding: 0;
 	margin: 1em 0 0 0;
+	padding: 0;
 }
 
 .tzwb-tabbed-content .tzwb-tabcontent li.tzwb-has-thumbnail {
-	list-style: none;
-	padding: 0.5em 0.3em;
 	overflow: auto;
+	padding: 0.5em 0.3em;
+	list-style: none;
 }
 
 .tzwb-tabbed-content .tzwb-tabcontent  li.tzwb-has-thumbnail .wp-post-image {
@@ -160,9 +160,9 @@
 }
 
 .tzwb-tabbed-content .tzwb-tabcontent .tzwb-comments-list li.tzwb-has-avatar {
-	list-style: none;
-	padding: 0.5em 0.3em;
 	overflow: auto;
+	padding: 0.5em 0.3em;
+	list-style: none;
 }
 
 .tzwb-tabbed-content .tzwb-tabcontent .tzwb-comments-list li.tzwb-has-avatar .avatar {
@@ -196,6 +196,6 @@
 }
 
 .tzwb-social-icons .social-icons-menu li a:hover {
-	text-decoration: none;
 	background: #333333;
+	text-decoration: none;
 }

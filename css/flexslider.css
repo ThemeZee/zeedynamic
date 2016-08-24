@@ -44,16 +44,16 @@
 	-webkit-backface-visibility: hidden;
 }
 .zeeflexslider .zeeslides img {
-	width: 100%;
 	display: block;
+	width: 100%;
 }
 .zeeflexslider .zeeslides:after {
-	content: "\0020";
 	display: block;
-	clear: both;
 	visibility: hidden;
-	line-height: 0;
+	clear: both;
 	height: 0;
+	content: "\0020";
+	line-height: 0;
 }
 html[xmlns] .zeeflexslider .zeeslides {
 	display: block;
@@ -70,8 +70,8 @@ html[xmlns] .zeeflexslider .zeeslides {
  * ====================================================================================================================*/
 
 .post-slider-container {
-	margin: 0 0 2em;
 	overflow: hidden;
+	margin: 0 0 2em;
 	padding-bottom: 15px;
 }
 
@@ -94,22 +94,22 @@ html[xmlns] .zeeflexslider .zeeslides {
 }
 
 .post-slider .zeeslide .slide-image {
-	width: 100%;
-	height: auto;
 	max-width: 840px;
 	max-height: 420px;
+	width: 100%;
+	height: auto;
 	vertical-align: top;
 }
 
 .post-slider .zeeslide .slide-post {
+	box-sizing: border-box;
 	margin-top: 1px;
 	padding: 1em 1.5em;
-	color: #fff;
-	background: #333;
 	border-top: 10px solid #e84747;
+	background: #333;
+	color: #fff;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	box-sizing: border-box;
 }
 
 .post-slider .zeeslide .slide-post .entry-title a:link,
@@ -136,41 +136,41 @@ html[xmlns] .zeeflexslider .zeeslides {
 
 /* Direction Nav */
 .post-slider-controls .zeeflex-direction-nav {
-	*height: 0;
 	position: absolute;
 	top: 1em;
 	left: 1em;
+	*height: 0;
 }
 
 .post-slider-controls .zeeflex-direction-nav a {
-	display: block;
 	position: absolute;
+	z-index: 10;
+	display: block;
 	margin: 0;
 	width: 40px;
 	height: 40px;
 	background: #e84747;
-	text-align: left;
 	color: #fff;
+	text-align: left;
 	font-size: 0;
 	cursor: pointer;
-	z-index: 10;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
 
 .post-slider-controls .zeeflex-direction-nav a:hover {
-	text-decoration: none;
 	background: #333;
+	text-decoration: none;
 }
 
 .post-slider-controls .zeeflex-direction-nav a:before {
-	margin: 0.35em;
-	-webkit-font-smoothing: antialiased;
 	display: inline-block;
-	font: normal 24px/1 Genericons;
-	text-decoration: inherit;
-	vertical-align: text-bottom;
+	margin: 0.35em;
 	color: #fff;
+	vertical-align: text-bottom;
+	text-decoration: inherit;
+	font: normal 24px/1 Genericons;
+	-webkit-font-smoothing: antialiased;
 }
 
 .post-slider-controls .zeeflex-direction-nav a.zeeflex-next:before {
@@ -196,26 +196,26 @@ html[xmlns] .zeeflexslider .zeeslides {
 /* Control Nav */
 .post-slider-controls .zeeflex-control-nav {
 	position: absolute;
-	width: 100%;
-	margin: 1px 0 0;
 	display: table;
+	margin: 1px 0 0;
+	width: 100%;
 }
 
 .post-slider-controls .zeeflex-control-nav li {
+	display: table-cell;
+	*display: inline;
 	padding: 0 1px 1px 0;
 	background: #fff;
-	display: table-cell;
 	zoom: 1;
-	*display: inline;
 }
 
 .post-slider-controls .zeeflex-control-nav li a {
 	z-index: 999;
-	height: 15px;
 	display: block;
+	height: 15px;
 	background: #333;
-	cursor: pointer;
 	text-indent: -9999px;
+	cursor: pointer;
 }
 
 .post-slider-controls .zeeflex-control-nav li a:hover {
