@@ -26,6 +26,10 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.1.7 =
+* fixed mobile menus on RTL language sites
+* moved Theme Links to Theme Options panel dropdown
+
 = 1.1.6 =
 * added Right-to-Left language support
 

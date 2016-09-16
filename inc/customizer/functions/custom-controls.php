@@ -96,10 +96,10 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			<div class="upgrade-pro-version">
 
-				<span class="customize-control-title"><?php esc_html_e( 'Pro Version', 'zeedynamic' ); ?></span>
+				<span class="customize-control-title"><?php esc_html_e( 'Pro Version Add-on', 'zeedynamic' ); ?></span>
 
 				<span class="textfield">
-					<?php printf( esc_html__( 'Purchase the Pro Version of %s to get additional features and advanced customization options.', 'zeedynamic' ), 'zeeDynamic' ); ?>
+					<?php printf( esc_html__( 'Purchase the %s Pro Add-on and get additional features and advanced customization options.', 'zeedynamic' ), 'zeeDynamic' ); ?>
 				</span>
 
 				<p>
@@ -112,18 +112,15 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			<div class="upgrade-plugins">
 
-				<span class="customize-control-title"><?php esc_html_e( 'ThemeZee Plugins', 'zeedynamic' ); ?></span>
+				<span class="customize-control-title"><?php esc_html_e( 'Recommended Plugins', 'zeedynamic' ); ?></span>
 
 				<span class="textfield">
-					<?php esc_html_e( 'Extend the functionality of your WordPress website with our customized plugins.', 'zeedynamic' ); ?>
+					<?php esc_html_e( 'Extend the functionality of your WordPress website with our free and easy to use plugins.', 'zeedynamic' ); ?>
 				</span>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://themezee.com/plugins/', 'zeedynamic' ) ); ?>?utm_source=customizer&utm_medium=button&utm_campaign=zeedynamic&utm_content=plugins" target="_blank" class="button button-secondary">
-						<?php esc_html_e( 'Browse Plugins', 'zeedynamic' ); ?>
-					</a>
-					<a href="<?php echo admin_url( 'plugin-install.php?tab=search&type=author&s=themezee' ); ?>" class="button button-primary">
-						<?php esc_html_e( 'Install now', 'zeedynamic' ); ?>
+					<a href="<?php echo admin_url( 'plugin-install.php?tab=search&type=author&s=themezee' ); ?>" class="button button-secondary">
+						<?php esc_html_e( 'Install Plugins', 'zeedynamic' ); ?>
 					</a>
 				</p>
 
