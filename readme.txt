@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.1.8 =
+* made slider images clickable and link to single post
+
 = 1.1.7 =
 * fixed mobile menus on RTL language sites
 * moved Theme Links to Theme Options panel dropdown
