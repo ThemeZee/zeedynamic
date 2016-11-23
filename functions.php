@@ -14,71 +14,70 @@ if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
 
 
 if ( ! function_exists( 'zeedynamic_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
-function zeedynamic_setup() {
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 */
+	function zeedynamic_setup() {
 
-	// Make theme available for translation. Translations can be filed in the /languages/ directory.
-	load_theme_textdomain( 'zeedynamic', get_template_directory() . '/languages' );
+		// Make theme available for translation. Translations can be filed in the /languages/ directory.
+		load_theme_textdomain( 'zeedynamic', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' );
 
-	// Let WordPress manage the document title.
-	add_theme_support( 'title-tag' );
+		// Let WordPress manage the document title.
+		add_theme_support( 'title-tag' );
 
-	// Enable support for Post Thumbnails on posts and pages.
-	add_theme_support( 'post-thumbnails' );
+		// Enable support for Post Thumbnails on posts and pages.
+		add_theme_support( 'post-thumbnails' );
 
-	// Set detfault Post Thumbnail size.
-	set_post_thumbnail_size( 820, 360, true );
+		// Set detfault Post Thumbnail size.
+		set_post_thumbnail_size( 820, 360, true );
 
-	// Register Navigation Menu.
-	register_nav_menu( 'primary', esc_html__( 'Main Navigation', 'zeedynamic' ) );
+		// Register Navigation Menu.
+		register_nav_menu( 'primary', esc_html__( 'Main Navigation', 'zeedynamic' ) );
 
-	// Switch default core markup for search form, comment form, and comments to output valid HTML5.
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+		// Switch default core markup for search form, comment form, and comments to output valid HTML5.
+		add_theme_support( 'html5', array(
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'zeedynamic_custom_background_args', array( 'default-color' => 'e5e5e5' ) ) );
+		// Set up the WordPress core custom background feature.
+		add_theme_support( 'custom-background', apply_filters( 'zeedynamic_custom_background_args', array( 'default-color' => 'e5e5e5' ) ) );
 
-	// Set up the WordPress core custom logo feature.
-	add_theme_support( 'custom-logo', apply_filters( 'zeedynamic_custom_logo_args', array(
-		'height' => 40,
-		'width' => 250,
-		'flex-height' => true,
-		'flex-width' => true,
-	) ) );
+		// Set up the WordPress core custom logo feature.
+		add_theme_support( 'custom-logo', apply_filters( 'zeedynamic_custom_logo_args', array(
+			'height' => 40,
+			'width' => 250,
+			'flex-height' => true,
+			'flex-width' => true,
+		) ) );
 
-	// Set up the WordPress core custom header feature.
-	add_theme_support('custom-header', apply_filters( 'zeedynamic_custom_header_args', array(
-		'header-text' => false,
-		'width'	=> 1230,
-		'height' => 410,
-		'flex-height' => true,
-	) ) );
+		// Set up the WordPress core custom header feature.
+		add_theme_support('custom-header', apply_filters( 'zeedynamic_custom_header_args', array(
+			'header-text' => false,
+			'width'	=> 1230,
+			'height' => 410,
+			'flex-height' => true,
+		) ) );
 
-	// Add Theme Support for wooCommerce.
-	add_theme_support( 'woocommerce' );
+		// Add Theme Support for wooCommerce.
+		add_theme_support( 'woocommerce' );
 
-	// Add extra theme styling to the visual editor.
-	add_editor_style( array( 'css/editor-style.css', zeedynamic_google_fonts_url() ) );
+		// Add extra theme styling to the visual editor.
+		add_editor_style( array( 'css/editor-style.css', zeedynamic_google_fonts_url() ) );
 
-	// Add Theme Support for Selective Refresh in Customizer.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+		// Add Theme Support for Selective Refresh in Customizer.
+		add_theme_support( 'customize-selective-refresh-widgets' );
 
-}
+	}
 endif;
 add_action( 'after_setup_theme', 'zeedynamic_setup' );
 

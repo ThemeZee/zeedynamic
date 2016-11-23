@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.1.9 =
+* improved escaping and sanitizing of widget settings and slider options
+
 = 1.1.8 =
 * made slider images clickable and link to single post
 
