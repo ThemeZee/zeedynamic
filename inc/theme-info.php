@@ -45,7 +45,7 @@ function zeedynamic_theme_info_page() {
 		<div class="important-links clearfix">
 			<p><strong><?php esc_html_e( 'Theme Links', 'zeedynamic' ); ?>:</strong>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/zeedynamic/', 'zeedynamic' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=theme-page' ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'zeedynamic' ); ?></a>
-				<a href="http://preview.themezee.com/zeedynamic/?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=demo" target="_blank"><?php esc_html_e( 'Theme Demo', 'zeedynamic' ); ?></a>
+				<a href="http://preview.themezee.com/?demo=zeedynamic&utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=demo" target="_blank"><?php esc_html_e( 'Theme Demo', 'zeedynamic' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/zeedynamic-documentation/', 'zeedynamic' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=documentation' ); ?>" target="_blank"><?php esc_html_e( 'Theme Documentation', 'zeedynamic' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/zeedynamic/reviews/?filter=5', 'zeedynamic' ) ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'zeedynamic' ); ?></a>
 			</p>
@@ -130,7 +130,7 @@ function zeedynamic_theme_info_page() {
 							<?php esc_html_e( 'Extend the functionality of your WordPress website with our free and easy to use plugins.', 'zeedynamic' ); ?>
 						</p>
 						<p>
-							<a href="<?php echo admin_url( 'plugin-install.php?tab=search&type=author&s=themezee' ); ?>" class="button button-secondary">
+							<a href="<?php echo esc_url( admin_url( 'plugin-install.php?tab=search&type=author&s=themezee' ) ); ?>" class="button button-secondary">
 								<?php esc_html_e( 'Install Plugins', 'zeedynamic' ); ?>
 							</a>
 						</p>
