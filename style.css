@@ -719,6 +719,12 @@ textarea {
 	vertical-align: top;
 }
 
+.site-description {
+	margin: -0.4em 0.8em 0.4em;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
 /* Header Widgets */
 .header-widgets {
 	display: inline;

@@ -35,6 +35,7 @@
 
 					<?php zeedynamic_site_logo(); ?>
 					<?php zeedynamic_site_title(); ?>
+					<?php zeedynamic_site_description(); ?>
 
 				</div><!-- .site-branding -->
 

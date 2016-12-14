@@ -32,19 +32,29 @@ function zeedynamic_customize_register_options( $wp_customize ) {
 		'description'    => zeedynamic_customize_theme_links(),
 	) );
 
-	// Add postMessage support for site title and description.
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-
 	// Change default background section.
 	$wp_customize->get_control( 'background_color' )->section   = 'background_image';
 	$wp_customize->get_section( 'background_image' )->title     = esc_html__( 'Background', 'zeedynamic' );
+
+	// Add postMessage support for site title and description.
+	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+
+	// Add selective refresh for site title and description.
+	$wp_customize->selective_refresh->add_partial( 'blogname', array(
+		'selector'        => '.site-title a',
+		'render_callback' => 'zeedynamic_customize_partial_blogname',
+	) );
+	$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
+		'selector'        => '.site-description',
+		'render_callback' => 'zeedynamic_customize_partial_blogdescription',
+	) );
 
 	// Add Display Site Title Setting.
 	$wp_customize->add_setting( 'zeedynamic_theme_options[site_title]', array(
 		'default'           => true,
 		'type'           	=> 'option',
-		'transport'         => 'refresh',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'zeedynamic_sanitize_checkbox',
 		)
 	);
@@ -54,6 +64,23 @@ function zeedynamic_customize_register_options( $wp_customize ) {
 		'settings' => 'zeedynamic_theme_options[site_title]',
 		'type'     => 'checkbox',
 		'priority' => 10,
+		)
+	);
+
+	// Add Display Tagline Setting.
+	$wp_customize->add_setting( 'zeedynamic_theme_options[site_description]', array(
+		'default'           => false,
+		'type'           	=> 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'zeedynamic_sanitize_checkbox',
+		)
+	);
+	$wp_customize->add_control( 'zeedynamic_theme_options[site_description]', array(
+		'label'    => esc_html__( 'Display Tagline', 'zeedynamic' ),
+		'section'  => 'title_tagline',
+		'settings' => 'zeedynamic_theme_options[site_description]',
+		'type'     => 'checkbox',
+		'priority' => 11,
 		)
 	);
 
@@ -96,10 +123,26 @@ add_action( 'customize_register', 'zeedynamic_customize_register_options' );
 
 
 /**
+ * Render the site title for the selective refresh partial.
+ */
+function zeedynamic_customize_partial_blogname() {
+	bloginfo( 'name' );
+}
+
+
+/**
+ * Render the site tagline for the selective refresh partial.
+ */
+function zeedynamic_customize_partial_blogdescription() {
+	bloginfo( 'description' );
+}
+
+
+/**
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function zeedynamic_customize_preview_js() {
-	wp_enqueue_script( 'zeedynamic-customizer-preview', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151202', true );
+	wp_enqueue_script( 'zeedynamic-customizer-preview', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20161214', true );
 }
 add_action( 'customize_preview_init', 'zeedynamic_customize_preview_js' );
 
