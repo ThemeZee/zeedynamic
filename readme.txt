@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.2.1 =
+* added centered layout in case no widgets were added to the sidebar
+
 = 1.2.0 =
 * added new theme setting to display tagline
 * added editor shortcuts and instant live preview for site title and tagline in Customizer
