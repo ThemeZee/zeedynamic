@@ -657,7 +657,7 @@ textarea {
 	width: 28%;
 }
 
-/* No Sidebar Layout */
+/* No Sidebar & Centered Layout Template */
 .no-sidebar .content-area,
 .site-content .centered-content-area {
 	float: none;
