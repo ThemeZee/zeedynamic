@@ -17,14 +17,26 @@ $theme_options = zeedynamic_theme_options();
 		<main id="main" class="site-main" role="main">
 
 		<?php
+		// Display Slider.
+		if ( true === $theme_options['slider_blog'] ) :
+
+			get_template_part( 'template-parts/post-slider' );
+
+		endif;
+
+		// Display Magazine Homepage Widgets.
+		if ( ! is_paged() && is_active_sidebar( 'magazine-homepage' ) ) : ?>
+
+			<div id="magazine-homepage-widgets" class="widget-area clearfix">
+
+				<?php dynamic_sidebar( 'magazine-homepage' ); ?>
+
+			</div><!-- #magazine-homepage-widgets -->
+
+			<?php
+		endif;
+
 		if ( have_posts() ) :
-
-			// Display Slider.
-			if ( true === $theme_options['slider_blog'] ) :
-
-				get_template_part( 'template-parts/post-slider' );
-
-			endif;
 
 			// Display Latest Posts Title.
 			if ( '' !== $theme_options['blog_title'] ) : ?>
