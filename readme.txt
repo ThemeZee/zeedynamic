@@ -26,6 +26,10 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.2.2 =
+* added template files for Magazine widgets to improve child theme compatibility
+* improved transient caching of Magazine widgets for increased performance
+
 = 1.2.1 =
 * added Magazine Homepage widgets to blog index
 * added centered layout in case no widgets were added to the sidebar

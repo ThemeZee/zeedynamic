@@ -217,6 +217,30 @@ if ( ! function_exists( 'zeedynamic_entry_meta' ) ) :
 endif;
 
 
+if ( ! function_exists( 'zeedynamic_magazine_entry_meta' ) ) :
+	/**
+	 * Displays the date and author of magazine posts
+	 */
+	function zeedynamic_magazine_entry_meta() {
+
+		$postmeta = zeedynamic_meta_date();
+		$postmeta .= zeedynamic_meta_author();
+
+		echo '<div class="entry-meta">' . $postmeta . '</div>';
+	}
+endif;
+
+
+if ( ! function_exists( 'zeedynamic_magazine_entry_date' ) ) :
+	/**
+	 * Displays the date of magazine posts
+	 */
+	function zeedynamic_magazine_entry_date() {
+		echo '<div class="entry-meta">' . zeedynamic_meta_date() . '</div>';
+	}
+endif;
+
+
 if ( ! function_exists( 'zeedynamic_meta_date' ) ) :
 	/**
 	 * Displays the post date

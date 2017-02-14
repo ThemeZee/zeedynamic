@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/zeedynamic/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: zeeDynamic is a fully responsive WordPress theme with strong colors and bold fonts. The theme fits perfectly for any news, magazine or blog website. The highlight of zeeDynamic is the flexible magazine homepage template and the stunning featured post slider. Of course the theme supports the newest WordPress core features.
-Version: 1.2.1
+Version: 1.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: zeedynamic
@@ -1192,15 +1192,20 @@ textarea {
 }
 
 /* Magazine Posts Grid Widget */
-.widget-magazine-posts-grid .magazine-posts-grid-row {
+.widget-magazine-posts .magazine-grid {
 	margin-right: -2em;
 }
 
-.widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
+.widget-magazine-posts .magazine-grid .large-post {
 	float: left;
 	box-sizing: border-box;
 	padding-right: 2em;
 	width: 50%;
+}
+
+.widget-magazine-posts .magazine-grid .post-column:nth-child(3n) .large-post,
+.widget-magazine-posts .magazine-grid .post-column:nth-child(4n) .medium-post {
+    clear: left;
 }
 
 /* Magazine Posts Columns Widget */
@@ -2109,15 +2114,15 @@ object {
 --------------------------------------------------------------*/
 @media only screen and (max-width: 40em) {
 	/* Magazine Post Widgets */
-	.widget-magazine-posts-grid .magazine-posts-grid-row {
+	.widget-magazine-posts .magazine-grid-two-columns {
 		margin-right: 0;
 	}
 
-	.widget-magazine-posts-grid .medium-post-row {
+	.widget-magazine-posts .magazine-grid-three-columns {
 		margin-right: -1.2em;
 	}
 
-	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post,
+	.widget-magazine-posts .magazine-grid .large-post,
 	.widget-magazine-posts-columns .magazine-posts-column-left {
 		float: none;
 		padding: 0;
@@ -2137,11 +2142,11 @@ object {
 		max-width: 50%;
 	}
 
-	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
+	.widget-magazine-posts .magazine-grid .large-post {
 		clear: left;
 	}
 
-	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post .wp-post-image {
+	.widget-magazine-posts .magazine-grid .large-post .wp-post-image {
 		margin-bottom: 1em;
 	}
 
@@ -2165,7 +2170,7 @@ object {
 		display: none;
 	}
 
-	.widget-magazine-posts-grid .medium-post-row {
+	.widget-magazine-posts .magazine-grid-three-columns {
 		margin-right: 0;
 	}
 
@@ -2223,7 +2228,7 @@ object {
 	}
 
 	.widget-magazine-posts .large-post .wp-post-image,
-	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post .wp-post-image {
+	.widget-magazine-posts .magazine-grid .large-post .wp-post-image {
 		float: none;
 		margin: 0 0 0.5em 0;
 		max-width: 100%;
