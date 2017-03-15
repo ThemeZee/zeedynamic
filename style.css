@@ -1401,7 +1401,8 @@ body.categories-hidden .entry-meta .meta-category {
 	 clip: rect(1px, 1px, 1px, 1px);
 }
 
-body.date-hidden.author-hidden.categories-hidden .content-area .entry-meta {
+body.date-hidden.author-hidden.categories-hidden .content-area .entry-meta,
+body.date-hidden.author-hidden .widget-magazine-posts .entry-meta {
 	display: none;
 }
 
