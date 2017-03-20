@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.3.1 =
+* fixed layout rendering issue in Magazine Grid widget
+
 = 1.3 =
 * added template files for Magazine widgets to improve child theme compatibility
 * added transient caching for Magazine widgets to increase performance
