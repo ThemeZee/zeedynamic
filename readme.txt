@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.3.2 =
+* fixed number of posts setting in Magazine widgets
+
 = 1.3.1 =
 * fixed layout rendering issue in Magazine Grid widget
 
