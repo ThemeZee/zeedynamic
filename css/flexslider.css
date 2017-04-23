@@ -93,10 +93,18 @@ html[xmlns] .zeeflexslider .zeeslides {
 	transition: all 1s ease;
 }
 
+.post-slider .zeeslide .slide-image-wrap {
+	margin: 0;
+	padding: 0;
+	background: #e5e5e5;
+}
+
 .post-slider .zeeslide .slide-image {
-	max-width: 840px;
-	max-height: 420px;
-	width: 100%;
+	margin: auto;
+	padding: 0;
+	max-width: 100%;
+	max-height: 360px;
+	width: auto;
 	height: auto;
 	vertical-align: top;
 }

@@ -26,6 +26,11 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.3.3 =
+* added post hyperlinks to slider images in post slider
+* added own template function to display slider image for better child theme support
+* fixed slider images getting stretched when too small images are uploaded
+
 = 1.3.2 =
 * fixed number of posts setting in Magazine widgets
 
