@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/zeedynamic/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: zeeDynamic is a fully responsive WordPress theme with strong colors and bold fonts. The theme fits perfectly for any news, magazine or blog website. The highlight of zeeDynamic is the flexible magazine homepage template and the stunning featured post slider. Of course the theme supports the newest WordPress core features.
-Version: 1.3.2
+Version: 1.3.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: zeedynamic
@@ -661,10 +661,10 @@ textarea {
 .no-sidebar .content-area,
 .site-content .centered-content-area {
 	float: none;
-	padding: 0;
-	width: 100%;
-	max-width: 810px;
 	margin: 0 auto;
+	padding: 0;
+	max-width: 810px;
+	width: 100%;
 }
 
 /* Fullwidth Template */
@@ -672,8 +672,8 @@ textarea {
 	float: none;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 	max-width: 100%;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -704,16 +704,15 @@ textarea {
 	padding: 0;
 	color: #e84747;
 	text-decoration: none;
+	font-weight: bold;
 	font-size: 32px;
 	font-size: 2rem;
 	font-family: 'Francois One', sans-serif;
-	font-weight: bold;
 }
 
 .site-title a:link,
 .site-title a:visited {
 	color: #e84747;
-	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -812,7 +811,6 @@ textarea {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: 'Francois One', Tahoma, Arial;
-	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -865,7 +863,6 @@ textarea {
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 	font-size: 13px;
 	font-size: 0.8125rem;
-	-webkit-transition: none;
 	transition: none;
 }
 
@@ -1275,7 +1272,6 @@ textarea {
 .entry-title a:visited {
 	color: #333333;
 	text-decoration: none;
-	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -1514,7 +1510,6 @@ body.date-hidden.author-hidden .widget-magazine-posts .entry-meta {
 .pagination a:link,
 .pagination a:visited {
 	color: #fff;
-	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 

@@ -115,15 +115,20 @@ li > ol {
 	margin: 0 0 0 1em;
 }
 
-.widget-magazine-posts-grid .magazine-posts-grid-row {
+.widget-magazine-posts .magazine-grid {
 	margin-right: 0;
 	margin-left: -2em;
 }
 
-.widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
+.widget-magazine-posts .magazine-grid .large-post {
 	float: right;
 	padding-right: 0;
 	padding-left: 2em;
+}
+
+.widget-magazine-posts .magazine-grid .post-column:nth-child(2n+1) .large-post,
+.widget-magazine-posts .magazine-grid .post-column:nth-child(3n+1) .medium-post {
+	clear: right;
 }
 
 .widget-magazine-posts-columns .magazine-posts-columns .magazine-posts-columns-content .magazine-posts-columns-post-list {
@@ -309,12 +314,12 @@ li > ol {
 }
 
 @media only screen and (max-width: 40em) {
-	.widget-magazine-posts-grid .magazine-posts-grid-row {
+	.widget-magazine-posts .magazine-grid-two-columns {
 		margin-right: 0;
 		margin-left: 0;
 	}
 
-	.widget-magazine-posts-grid .medium-post-row {
+	.widget-magazine-posts .magazine-grid-three-columns {
 		margin-right: 0;
 		margin-left: -1.2em;
 	}
@@ -331,14 +336,14 @@ li > ol {
 		margin: 0 0 0 1.5em;
 	}
 
-	.widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
+	.widget-magazine-posts .magazine-grid .large-post {
 		clear: right;
 	}
 
 }
 
 @media only screen and (max-width: 35em) {
-	.widget-magazine-posts-grid .medium-post-row {
+	.widget-magazine-posts .magazine-grid-three-columns {
 		margin-right: 0;
 		margin-left: 0;
 	}
