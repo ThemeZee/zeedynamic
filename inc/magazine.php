@@ -82,7 +82,7 @@ function zeedynamic_get_magazine_post_ids( $cache_id, $category, $number_of_post
 	$cache_id = sanitize_key( $cache_id );
 	$post_ids = get_transient( 'zeedynamic_magazine_post_ids' );
 
-	if ( ! isset( $post_ids[ $cache_id ] ) ) {
+	if ( ! isset( $post_ids[ $cache_id ] ) || is_customize_preview() ) {
 
 		// Get Posts from Database.
 		$query_arguments = array(
