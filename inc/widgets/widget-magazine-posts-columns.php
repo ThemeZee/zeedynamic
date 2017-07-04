@@ -24,7 +24,7 @@ class zeeDynamic_Magazine_Posts_Columns_Widget extends WP_Widget {
 			esc_html__( 'Magazine (Columns)', 'zeedynamic' ), // Name.
 			array(
 				'classname' => 'zeedynamic-magazine-columns-widget',
-				'description' => esc_html__( 'Displays your posts from two selected categories. Please use this widget ONLY in the Magazine Homepage widget area.', 'zeedynamic' ),
+				'description' => esc_html__( 'Displays your posts from two selected categories.', 'zeedynamic' ),
 				'customize_selective_refresh' => true,
 			) // Args.
 		);
@@ -36,12 +36,12 @@ class zeeDynamic_Magazine_Posts_Columns_Widget extends WP_Widget {
 	private function default_settings() {
 
 		$defaults = array(
-			'category_one'			=> 0,
-			'category_two'			=> 0,
-			'category_one_title'	=> '',
-			'category_two_title'	=> '',
-			'number'				=> 4,
-			'highlight_post'		=> true,
+			'category_one'       => 0,
+			'category_two'       => 0,
+			'category_one_title' => esc_html__( 'Left Category', 'zeedynamic' ),
+			'category_two_title' => esc_html__( 'Right Category', 'zeedynamic' ),
+			'number'             => 4,
+			'highlight_post'     => true,
 		);
 
 		return $defaults;
