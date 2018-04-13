@@ -144,7 +144,7 @@ function zeedynamic_customize_partial_blogdescription() {
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function zeedynamic_customize_preview_js() {
-	wp_enqueue_script( 'zeedynamic-customizer-preview', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20170627', true );
+	wp_enqueue_script( 'zeedynamic-customizer-preview', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20170627', true );
 }
 add_action( 'customize_preview_init', 'zeedynamic_customize_preview_js' );
 
@@ -153,7 +153,7 @@ add_action( 'customize_preview_init', 'zeedynamic_customize_preview_js' );
  * Embed CSS styles for the theme options in the Customizer
  */
 function zeedynamic_customize_preview_css() {
-	wp_enqueue_style( 'zeedynamic-customizer-css', get_template_directory_uri() . '/css/customizer.css', array(), '20161214' );
+	wp_enqueue_style( 'zeedynamic-customizer-css', get_template_directory_uri() . '/assets/css/customizer.css', array(), '20161214' );
 }
 add_action( 'customize_controls_print_styles', 'zeedynamic_customize_preview_css' );
 
