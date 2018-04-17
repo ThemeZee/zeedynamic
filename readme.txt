@@ -30,6 +30,7 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 * added default theme fonts as local fonts
 * use local fonts instead of Google fonts for GDPR compliance
 * restructured assets into one folder
+* changed default font from Droid Sans to Open Sans
 
 = 1.4 =
 * added improved Magazine Widget Customizer Control
