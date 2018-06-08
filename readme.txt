@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.5.1 =
+* improved styling of checkbox label in comment form
+
 = 1.5 =
 * added default theme fonts as local fonts
 * use local fonts instead of Google fonts for GDPR compliance
