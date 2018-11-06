@@ -26,6 +26,11 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.6 =
+* added styling for Gutenberg blocks
+* added custom color palette for Gutenberg
+* added editor styling for WordPress 5.0
+
 = 1.5.1 =
 * improved styling of checkbox label in comment form
 
