@@ -26,6 +26,10 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.6.1 =
+* fixed link color in Gutenberg Editor
+* fixed styling of Read More button
+
 = 1.6 =
 * added styling for Gutenberg blocks
 * added custom color palette for Gutenberg
