@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.6.2 =
+* added support for responsive embed blocks
+
 = 1.6.1 =
 * fixed link color in Gutenberg Editor
 * fixed styling of Read More button

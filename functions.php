@@ -106,6 +106,9 @@ if ( ! function_exists( 'zeedynamic_setup' ) ) :
 				'color' => '#333333',
 			),
 		) );
+
+		// Add support for responsive embed blocks.
+		add_theme_support( 'responsive-embeds' );
 	}
 endif;
 add_action( 'after_setup_theme', 'zeedynamic_setup' );
