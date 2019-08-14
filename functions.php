@@ -237,6 +237,19 @@ add_action( 'after_setup_theme', 'zeedynamic_add_image_sizes' );
 
 
 /**
+ * Make custom image sizes available in Gutenberg.
+ */
+function zeedynamic_add_image_size_names( $sizes ) {
+	return array_merge( $sizes, array(
+		'post-thumbnail'             => esc_html__( 'zeeDynamic Single Post', 'zeedynamic' ),
+		'zeedynamic-thumbnail-large' => esc_html__( 'zeeDynamic Magazine Post', 'zeedynamic' ),
+		'zeedynamic-thumbnail-small' => esc_html__( 'zeeDynamic Thumbnail', 'zeedynamic' ),
+	) );
+}
+add_filter( 'image_size_names_choose', 'zeedynamic_add_image_size_names' );
+
+
+/**
  * Include Files
  */
 
