@@ -43,13 +43,13 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/zeedynamic/', 'zeedynamic' ) ); ?>" target="_blank">
-						<?php esc_html_e( 'Support Forum', 'zeedynamic' ); ?>
+					<a href="<?php echo esc_url( __( 'https://themezee.com/changelogs/?action=themezee-changelog&type=theme&slug=zeedynamic/', 'zeedynamic' ) ); ?>" target="_blank">
+						<?php esc_html_e( 'Theme Changelog', 'zeedynamic' ); ?>
 					</a>
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/zeedynamic/reviews/?filter=5', 'zeedynamic' ) ); ?>" target="_blank">
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/zeedynamic/reviews/', 'zeedynamic' ) ); ?>" target="_blank">
 						<?php esc_html_e( 'Rate this theme', 'zeedynamic' ); ?>
 					</a>
 				</p>

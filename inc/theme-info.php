@@ -47,7 +47,8 @@ function zeedynamic_theme_info_page() {
 				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/zeedynamic/', 'zeedynamic' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=theme-page' ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'zeedynamic' ); ?></a>
 				<a href="http://preview.themezee.com/?demo=zeedynamic&utm_source=theme-info&utm_campaign=zeedynamic" target="_blank"><?php esc_html_e( 'Theme Demo', 'zeedynamic' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/zeedynamic-documentation/', 'zeedynamic' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=zeedynamic&utm_content=documentation' ); ?>" target="_blank"><?php esc_html_e( 'Theme Documentation', 'zeedynamic' ); ?></a>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/zeedynamic/reviews/?filter=5', 'zeedynamic' ) ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'zeedynamic' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://themezee.com/changelogs/?action=themezee-changelog&type=theme&slug=zeedynamic', 'zeedynamic' ) ); ?>" target="_blank"><?php esc_html_e( 'Theme Changelog', 'zeedynamic' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/zeedynamic/reviews/', 'zeedynamic' ) ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'zeedynamic' ); ?></a>
 			</p>
 		</div>
 		<hr>
@@ -150,7 +151,7 @@ function zeedynamic_theme_info_page() {
 				<?php printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'zeedynamic' ),
 					$theme->display( 'Name' ),
 					'<a target="_blank" href="' . __( 'https://themezee.com/', 'zeedynamic' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=zeedynamic" title="ThemeZee">ThemeZee</a>',
-					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/zeedynamic/reviews/?filter=5', 'zeedynamic' ) . '" title="' . esc_attr__( 'Review zeeDynamic', 'zeedynamic' ) . '">' . esc_html__( 'rate it', 'zeedynamic' ) . '</a>'
+					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/zeedynamic/reviews/', 'zeedynamic' ) . '" title="' . esc_attr__( 'Review zeeDynamic', 'zeedynamic' ) . '">' . esc_html__( 'rate it', 'zeedynamic' ) . '</a>'
 				); ?>
 			</p>
 
