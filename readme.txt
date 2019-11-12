@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.7.2 - 2019-11-12 =
+* added font display swap to default theme fonts
+
 = 1.7.1 - 2019-10-23 =
 * added improved Theme Info section to Customizer
 
