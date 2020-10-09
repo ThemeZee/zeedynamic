@@ -9,7 +9,7 @@
 
 <li id="slide-<?php the_ID(); ?>" class="zeeslide clearfix">
 
-	<?php zeedynamic_slider_image( 'post-thumbnail', array( 'class' => 'slide-image' ) ); ?>
+	<?php zeedynamic_slider_image( 'post-thumbnail', array( 'class' => 'slide-image', 'loading' => false ) ); ?>
 
 	<div class="slide-post clearfix">
 
