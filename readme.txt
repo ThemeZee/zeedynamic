@@ -26,6 +26,9 @@ For more information about zeeDynamic please go to https://themezee.com/themes/z
 
 == Changelog ==
 
+= 1.7.7 - 2021-06-06 =
+* fixed styling of Social Icons widget from Widget Bundle plugin
+
 = 1.7.6 - 2021-03-24 =
 * fixed PHP warning in wp_localize_script
 
